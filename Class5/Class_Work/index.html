@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    1. Simple Table (One Row)
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>Raj</td>
+        <td>20</td>
+        <td>Bhopal</td>
+      </tr>
+    </table>
+    <hr />
+    2. Table with Multiple Rows
+
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>Raj</td>
+        <td>20</td>
+        <td>Bhopal</td>
+      </tr>
+      <tr>
+        <td>Amit</td>
+        <td>22</td>
+        <td>Indore</td>
+      </tr>
+      <tr>
+        <td>Neha</td>
+        <td>21</td>
+        <td>Delhi</td>
+      </tr>
+    </table>
+    <hr />
+    3. Difference between
+    <th>and</th>
+    <td>
+      <table border="1">
+        <tr>
+          <th>Heading</th>
+          <th>Heading</th>
+        </tr>
+        <tr>
+          <td>Data</td>
+          <td>Data</td>
+        </tr>
+      </table>
+      🔍 Difference:
+    </td>
+
+    <th>→ Bold text + Center aligned (default)</th>
+    <td>
+      → Normal text + Left aligned (default)
+      <hr />
+      4. Table using colspan (merge 3 columns)
+
+      <table border="1">
+        <tr>
+          <th colspan="3">Student Details</th>
+        </tr>
+        <tr>
+          <td>Raj</td>
+          <td>20</td>
+          <td>Bhopal</td>
+        </tr>
+      </table>
+      <hr />
+      5. Table using rowspan (merge 2 rows)
+
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Raj</td>
+          <td>Math</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+        </tr>
+      </table>
+      <hr />
+      6. Table using both rowspan and colspan
+
+      <table border="1">
+        <tr>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Marks</th>
+        </tr>
+        <tr>
+          <th>Math</th>
+          <th>Science</th>
+        </tr>
+        <tr>
+          <td>Raj</td>
+          <td>85</td>
+          <td>90</td>
+        </tr>
+      </table>
+      <hr />
+      7. Nested Table (table inside table)
+
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>Raj</td>
+          <td>
+            <table border="1">
+              <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+              </tr>
+              <tr>
+                <td>Math</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>Science</td>
+                <td>90</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!-- 8. Subjects & Marks inside Inner Table
+✅ Already included above in the nested table:
+Math → 85
+Science → 90
+
+9. Hierarchical Structure of Nested Table
+Main Table
+│
+├── Row (<tr>)
+│   ├── Cell (<td>)
+│   │     └── Inner Table
+│   │           ├── Row
+│   │           │    ├── Cell (Subject)
+│   │           │    ├── Cell (Marks)
+│   │
+│   ├── Cell (<td>) -->
+    </td>
+  </body>
+</html>
