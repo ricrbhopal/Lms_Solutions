@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Practice</title>
+</head>
+<body>
+
+<h2>1. Simple HTML Form (Name, Email, Submit)</h2>
+
+<p>
+This exercise uses basic form elements. The label and input tags are paired using 
+the <b>for</b> attribute in the label and the matching <b>id</b> attribute in the input.
+</p>
+
+<form>
+    <!-- Name Field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+
+    <!-- Email Field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<h2>2. Dropdown Menu for Course</h2>
+
+<p>
+A dropdown is created using the select tag and options are defined using option tag.
+</p>
+
+<form>
+    <!-- Course Dropdown -->
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+</form>
+
+<hr>
+
+<h2>3. Textarea for Feedback</h2>
+
+<p>
+The textarea tag is used for multi-line input. Rows define height and cols define width.
+</p>
+
+<form>
+    <!-- Feedback Textarea -->
+    <label for="feedback">Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="3" cols="20"></textarea>
+</form>
+
+<hr>
+
+<h2>4. Complete Form</h2>
+
+<p>
+This form includes all elements: name, email, dropdowns, textarea, file upload, and buttons.
+</p>
+
+<form>
+
+    <!-- Name -->
+    <label for="name2">Name:</label>
+    <input type="text" id="name2" name="name">
+    <br><br>
+
+    <!-- Email -->
+    <label for="email2">Email:</label>
+    <input type="email" id="email2" name="email">
+    <br><br>
+
+    <!-- Course -->
+    <label for="course2">Course:</label>
+    <select id="course2" name="course">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+    <br><br>
+
+    <!-- City -->
+    <label for="city">City:</label>
+    <select id="city" name="city">
+        <option>Bhopal</option>
+        <option>Indore</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+    </select>
+    <br><br>
+
+    <!-- Feedback -->
+    <label for="feedback2">Feedback:</label><br>
+    <textarea id="feedback2" name="feedback" rows="3" cols="20"></textarea>
+    <br><br>
+
+    <!-- File Upload -->
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file">
+    <br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>

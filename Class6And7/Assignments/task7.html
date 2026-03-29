@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Form Task 7</title>
+  </head>
+
+  <body>
+    <form>
+      <!-- Personal Particular -->
+      <fieldset>
+        <legend>Personal Particular</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <br /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <br /><br />
+
+        <!-- Gender -->
+        <label>Gender:</label>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+          <option value="">--Select--</option>
+          <option value="under1">&lt; 1 year old</option>
+          <option value="1-5">1 - 5 years</option>
+          <option value="6-10">6 - 10 years</option>
+          <option value="above10">Above 10 years</option>
+        </select>
+      </fieldset>
+
+      <br />
+
+      <!-- Languages -->
+      <fieldset>
+        <legend>Languages</legend>
+
+        <input type="checkbox" id="java" name="language" value="Java" />
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="cpp" name="language" value="C/C++" />
+        <label for="cpp">C/C++</label>
+
+        <input type="checkbox" id="csharp" name="language" value="C#" />
+        <label for="csharp">C#</label>
+      </fieldset>
+
+      <br />
+
+      <!-- Instruction -->
+      <fieldset>
+        <legend>Instruction</legend>
+
+        <textarea
+          name="message"
+          rows="5"
+          cols="30"
+          placeholder="Enter your Instruction here..."
+        ></textarea>
+      </fieldset>
+
+      <br />
+
+      <!-- Buttons -->
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure and Form Exercises</title>
+</head>
+<body>
+
+<h1>HTML Structure and Form Input Exercises</h1>
+
+<!-- 1 -->
+<h2>1. Section Tag Example</h2>
+
+<p>
+The section tag is used to group related content. This example defines a distinct 
+area for the "Introduction," containing a heading and a paragraph.
+</p>
+
+<section>
+    <h1>Introduction</h1>
+    <p>This section provides a brief introduction to the content of the page.</p>
+</section>
+
+<hr>
+
+<!-- 2 -->
+<h2>2. Multiple Sections</h2>
+
+<p>
+A web page can be divided into multiple independent sections, each covering a 
+different topic such as HTML and CSS.
+</p>
+
+<section>
+    <h1>HTML</h1>
+    <p>HTML is the standard markup language for creating Web pages.</p>
+</section>
+
+<section>
+    <h1>CSS</h1>
+    <p>CSS is used to define styles for web pages, including the design and layout.</p>
+</section>
+
+<hr>
+
+<!-- 3 -->
+<h2>3. Section with Multiple Elements</h2>
+
+<p>
+A single section can contain different elements like heading, paragraph, and button.
+</p>
+
+<section>
+    <h2>Latest Update</h2>
+    <p>Click the button below to view the latest changes to our documentation.</p>
+    <button type="button">View Details</button>
+</section>
+
+<hr>
+
+<!-- 4 -->
+<h2>4. Radio Buttons (Gender Selection)</h2>
+
+<p>
+Radio buttons allow only one selection. This is controlled using the same name attribute.
+</p>
+
+<form>
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+</form>
+
+<hr>
+
+<!-- 5 -->
+<h2>5. Checkboxes (Hobbies)</h2>
+
+<p>
+Checkboxes allow multiple selections. Each option has a unique id and label.
+</p>
+
+<form>
+    <label>Hobbies:</label>
+
+    <input type="checkbox" id="html_hobby" name="hobby_html" value="HTML">
+    <label for="html_hobby">HTML</label>
+
+    <input type="checkbox" id="css_hobby" name="hobby_css" value="CSS">
+    <label for="css_hobby">CSS</label>
+
+    <input type="checkbox" id="javascript_hobby" name="hobby_js" value="JavaScript">
+    <label for="javascript_hobby">JavaScript</label>
+</form>
+
+<hr>
+
+<!-- 6 -->
+<h2>6. Complete Form</h2>
+
+<p>
+This form combines radio buttons and checkboxes using fieldset and legend for grouping.
+</p>
+
+<h3>User Profile Form</h3>
+
+<form>
+
+    <!-- Gender -->
+    <fieldset>
+        <legend>Gender Selection</legend>
+
+        <input type="radio" id="male2" name="gender" value="male">
+        <label for="male2">Male</label>
+
+        <input type="radio" id="female2" name="gender" value="female">
+        <label for="female2">Female</label>
+    </fieldset>
+
+    <br>
+
+    <!-- Hobbies -->
+    <fieldset>
+        <legend>Select Hobbies</legend>
+
+        <input type="checkbox" id="html2" name="hobby" value="HTML">
+        <label for="html2">HTML</label>
+
+        <input type="checkbox" id="css2" name="hobby" value="CSS">
+        <label for="css2">CSS</label>
+
+        <input type="checkbox" id="js2" name="hobby" value="JavaScript">
+        <label for="js2">JavaScript</label>
+    </fieldset>
+
+    <br>
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Profile">
+
+</form>
+
+</body>
+</html>
