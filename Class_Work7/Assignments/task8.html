@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farewell Party Survey Form Task 8</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Farewell Party Survey Form</legend>
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+        <br /><br />
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <br /><br />
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" />
+        <br /><br />
+
+        <!-- Role -->
+        <label for="role">Which option best describes you?</label><br />
+        <select id="role" name="role">
+          <option value="">--Select--</option>
+          <option value="student">Student</option>
+          <option value="engineering">Engineering Student</option>
+          <option value="pharmacy">Pharmacy Student</option>
+          <option value="law">Law Student</option>
+        </select>
+        <br /><br />
+
+        <!-- Attend -->
+        <p>Will you attend the party?</p>
+
+        <input type="radio" id="yes" name="attend" value="yes" />
+        <label for="yes">Yes</label>
+
+        <input type="radio" id="no" name="attend" value="no" />
+        <label for="no">No</label>
+        <br /><br />
+
+        <!-- Feedback -->
+        <p>What did you like about the program?</p>
+
+        <input type="checkbox" id="training" name="like" value="Training" />
+        <label for="training">Training</label><br />
+
+        <input
+          type="checkbox"
+          id="sessions"
+          name="like"
+          value="Learning Sessions"
+        />
+        <label for="sessions">The learning sessions from Industry Experts</label
+        ><br />
+
+        <input
+          type="checkbox"
+          id="meetups"
+          name="like"
+          value="Community Meetups"
+        />
+        <label for="meetups">Community Meetups</label><br />
+
+        <input
+          type="checkbox"
+          id="brown"
+          name="like"
+          value="Brown Bag Sessions"
+        />
+        <label for="brown">Brown Bag Sessions</label><br />
+
+        <input type="checkbox" id="hybrid" name="like" value="Hybrid Mode" />
+        <label for="hybrid">Switching to Hybrid Mode</label><br />
+
+        <input type="checkbox" id="food" name="like" value="Food" />
+        <label for="food">Food, Office etc.</label>
+        <br /><br />
+
+        <!-- Comments -->
+        <label for="message">Any comments or suggestions:</label><br />
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        <br /><br />
+
+        <!-- Buttons -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
