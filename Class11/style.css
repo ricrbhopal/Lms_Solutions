@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. Margin Practice */
+.box1 {
+    background-color: lightblue;
+    margin: 20px;
+    padding: 10px;
+}
+
+.box2 {
+    background-color: lightgreen;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+/* 2. Padding Practice */
+.padding-box {
+    background-color: lightcoral;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+/* 3. Margin vs Padding */
+.margin-box {
+    background-color: lightyellow;
+    margin: 30px;
+    border: 2px solid black;
+}
+
+.padding-box2 {
+    background-color: lightpink;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+/* 4. Image Size & Border */
+img {
+    width: 300px;
+    height: auto;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+/* 5. Image Shape & Shadow */
+.circle {
+    border-radius: 100%;
+}
+
+.shadow {
+    box-shadow: 5px 5px 10px blue;
+    /* Shadow always black color but we put blue color and the reasion is good visibility */
+}
+
+/* 6. Image Alignment */
+.float-img {
+    float: right;
+    margin: 10px;
+}
+
+/* 7. Responsive Image */
+.container {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
