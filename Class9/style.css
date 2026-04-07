@@ -1,0 +1,132 @@
+                /* External CSS 1.*/
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+                /* HEX colors 3.*/
+body {
+    background-color: #000000;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+p {
+    color: #00ff00;
+}
+
+                /* RGB colors 4.*/
+body {
+    background-color: rgb(255, 0, 0);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+                /* 5 */
+p {
+    color: blue;
+}
+
+.box {
+    background-color: yellow;
+}
+
+#header {
+    color: red;
+}
+
+                /* 6 */
+body {
+    background-color: lightgray;
+}
+
+.section6 {
+    background-color: yellow;
+}
+
+h1.section6 {
+    background-color: red;
+}
+
+div.section6 {
+    background-color: lightblue;
+}
+
+                /* 7 */
+.section7 {
+    background-color: lightblue;
+    color: black;
+}
+
+.section7 .special {
+    color: red;
+}
+
+                /* 8 */
+.section8 * {
+    margin: 0;
+    padding: 0;
+}
+
+.section8 h1 {
+    color: red;
+}
+
+.section8 .para {
+    color: green;
+}
+
+                /* 9 */
+.section9 {
+    background-color: black;
+    color: white;
+}
+
+.section9 p {
+    padding: 10px;
+}
+
+                /* 10 */
+.section10 h1 {
+    color: red;
+}
+
+.section10 p {
+    color: blue;
+}
+
+.section10 div {
+    color: green;
+}
+
+                /* 11 */
+.section11 p {
+    color: purple;
+    font-size: 20px;
+}
+
+                /* 12 */
+.section12 p {
+    color: white;
+    background-color: black;
+}
+
+.section12 div {
+    color: yellow;
+    background-color: blue;
+}
