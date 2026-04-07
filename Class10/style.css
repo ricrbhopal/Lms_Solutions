@@ -1,0 +1,116 @@
+                /* 1 */
+.ex1 {
+    border: 2px solid black;
+}
+
+                /* 2 */
+.ex2-h1 {
+    border: 2px dotted red;
+}
+
+.ex2-p {
+    border: 2px dashed blue;
+}
+
+.ex2-div {
+    border: 3px double green;
+}
+
+                /* 3 */
+.ex3 {
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+
+                /* 4 */
+.ex4 {
+    border-top: 2px solid red;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid green;
+    border-left: 2px solid black;
+}
+
+                /* 5 */
+.ex5 {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+                /* 6 */
+.ex6 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+                /* 7 */
+.ex7 {
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+                /* 8 */
+.ex8 {
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+                /* 9 */
+.ex9 {
+    font: italic bold 20px Arial;
+}
+
+                /* 10 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.ex10 {
+    font-family: 'Poppins', sans-serif;
+}
+
+                /* 11 */
+.ex11 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+                /* 12 */
+.ex12 {
+    background-color: lightgray;
+    padding: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+                /* 13 */
+.ex13 {
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: inset 2px 2px 5px gray;
+}
+
+                /* 14 */
+.ex14 {
+    border: 2px solid black;
+    padding: 10px;
+    font: bold 18px Arial;
+    box-shadow: 3px 3px 5px gray;
+}
+
+                /* 15 */
+.ex15-h1 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+.ex15-p {
+    font: 18px Arial;
+}
+
+.ex15-div {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px gray; 
+}
