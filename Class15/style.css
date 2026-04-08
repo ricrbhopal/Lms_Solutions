@@ -1,0 +1,100 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+/* 1. Basic Transition */
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 0.5s;
+}
+.box1:hover {
+  width: 200px;
+}
+
+/* 2. Timing Functions */
+.box2 {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  background: blue;
+  transition: all 1s;
+}
+.ease:hover { transform: translateX(100px); transition-timing-function: ease; }
+.linear:hover { transform: translateX(100px); transition-timing-function: linear; }
+.easein:hover { transform: translateX(100px); transition-timing-function: ease-in; }
+.easeout:hover { transform: translateX(100px); transition-timing-function: ease-out; }
+.easeinout:hover { transform: translateX(100px); transition-timing-function: ease-in-out; }
+
+/* 3. Transform Basics */
+.translate:hover { transform: translate(50px, 20px); }
+.rotate:hover { transform: rotate(45deg); }
+.scale:hover { transform: scale(1.5); }
+
+/* 4. Combined Transform */
+.combine {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: 0.5s;
+}
+.combine:hover {
+  transform: translate(50px) rotate(45deg) scale(1.2);
+}
+
+/* 5. Transition + Transform */
+.box5 {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition: transform 0.5s;
+}
+.box5:hover {
+  transform: rotate(180deg) scale(1.2);
+}
+
+/* 6. Animation */
+.animate {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  animation: move 3s infinite;
+}
+@keyframes move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(150px); }
+  100% { transform: translateX(0); }
+}
+
+/* 7. Real UI */
+.button {
+  padding: 10px 20px;
+  background: teal;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  width: 150px;
+  height: 100px;
+  background: lightgray;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+img {
+  width: 100px;
+  transition: 0.3s;
+}
+img:hover {
+  transform: rotate(15deg);
+}
