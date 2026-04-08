@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* 1. Pseudo-Class */
+.btn {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  background: red;
+}
+
+input:focus {
+  border: 2px solid green;
+  outline: none;
+}
+
+/* 2. Position-Based */
+.list li:first-child {
+  color: red;
+}
+
+.list li:last-child {
+  color: blue;
+}
+
+.list li:nth-child(2) {
+  color: green;
+}
+
+/* 3. Conditional Styling */
+button:not([disabled]) {
+  background: green;
+  color: white;
+}
+
+button:disabled {
+  background: gray;
+  color: white;
+}
+
+.box:not(.ignore) {
+  color: purple;
+}
+
+/* 4. Pseudo-Element */
+.text::first-letter {
+  font-size: 30px;
+  color: red;
+}
+
+.text::first-line {
+  font-weight: bold;
+}
+
+/* 5. Before & After */
+.before-after::before {
+  content: "👉 "; /* adds content before the element text */
+  color: green;
+}
+
+.before-after::after {
+  content: " ✔"; /* adds content after the element text */
+  color: blue;
+}
+
+/* 6. CSS Selectors */
+.parent p {
+  color: orange;
+}
+
+.parent > p {
+  font-weight: bold;
+}
+
+.parent div p {
+  color: purple;
+}
+
+/* 7. Vendor Prefix */
+.box-prefix {
+  width: 150px;
+  height: 150px;
+  background: coral;
+  transition: transform 0.5s;
+  
+  /* Vendor prefixes */
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+}
+
+.box-prefix:hover {
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+}
