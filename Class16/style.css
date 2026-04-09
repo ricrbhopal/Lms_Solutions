@@ -1,0 +1,134 @@
+/* 1 & 2 Global Variables */
+:root {
+  --main-color: blue;
+  --padding: 20px;
+  --font-size: 18px;
+}
+
+/* Variable Usage */
+.box {
+  background: var(--main-color);
+  padding: var(--padding);
+  color: white;
+  margin: 10px;
+}
+
+/* 3 Local Variable */
+.container {
+  --main-color: green;
+  background: var(--main-color);
+  padding: 20px;
+  color: white;
+}
+
+/* 4 Global vs Local */
+.global {
+  color: var(--main-color);
+}
+
+.local {
+  --main-color: red;
+  color: var(--main-color);
+}
+
+/* 6 Fallback */
+.fallback {
+  color: var(--unknown, purple);
+}
+
+/* 7 Theme */
+.light-theme {
+  --bg: white;
+  --text: black;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+}
+
+.dark-theme {
+  --bg: black;
+  --text: white;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+}
+
+/* 8 Viewport + 9 Flexible Units */
+.layout {
+  display: flex;
+  width: 100%;
+}
+
+/* 11 Responsive Layout */
+.sidebar {
+  width: 30%;
+  background: lightgray;
+}
+
+.content {
+  width: 70%;
+  background: lightblue;
+}
+
+/* 12 Responsive Image */
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+/* 13 Flexbox */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex div {
+  background: coral;
+  padding: 20px;
+  flex: 1 1 100px;
+}
+
+/* 14 Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.grid div {
+  background: teal;
+  color: white;
+  padding: 20px;
+}
+
+/* 15 Mobile First */
+.header {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background: orange;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* 10 Media Query + 15 Enhancement */
+@media (min-width: 768px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+}
