@@ -1,200 +1,101 @@
-function runExercises() {
-  let output = "";
+// Exercise 1,2,5
+function runFunction() {
+    console.log("Hello Student");
 
-  // 1. For Loop Practice
+    // Exercise 3 & 25
+    const div = document.getElementById("container");
+    const btn = document.createElement("button");
+    btn.innerHTML = "New Button";
+    div.append(btn);
+}
 
-  // Exercise 1
-  output += "Exercise 1:\n";
-  for (let i = 1; i <= 10; i++) {
-    output += i + " ";
-  }
+// Exercise 6,7
+var a = "Amit";
+let age = 22;
+const city = "Delhi";
+console.log(a, age, city);
 
-  // Exercise 2
-  output += "\n\nExercise 2:\n";
-  for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 0) output += i + " ";
-  }
+// Exercise 8
+let x;
+x = 10;
+console.log(x);
 
-  // Exercise 3
-  output += "\n\nExercise 3:\n";
-  for (let i = 10; i >= 1; i--) {
-    output += i + " ";
-  }
+// Exercise 9
+let userName = "Raj";
+let _age = 20;
+// let 123name = "Invalid";
 
-  // Exercise 4
-  output += "\n\nExercise 4:\n";
-  let sum1 = 0;
-  for (let i = 1; i <= 5; i++) {
-    sum1 += i;
-  }
-  output += "Sum = " + sum1;
+// Exercise 10
+let num = 10;
+let str = "Hello";
+let bool = true;
 
-  // 2. While Loop Practice
+// Exercise 11
+console.log(typeof str);
 
-  // Exercise 5
-  output += "\n\nExercise 5:\n";
-  let i = 1;
-  while (i <= 5) {
-    output += i + " ";
-    i++;
-  }
+// Exercise 12
+let u;
+let n = null;
+console.log(u, n);
 
-  // Exercise 6
-  output += "\n\nExercise 6:\n";
-  i = 5;
-  while (i >= 1) {
-    output += i + " ";
-    i--;
-  }
+// Exercise 13
+let data = 10;
+console.log(data);
+data = "Hello";
+console.log(data);
 
-  // Exercise 7
-  output += "\n\nExercise 7:\n";
-  i = 1;
-  let sum2 = 0;
-  while (i <= 10) {
-    sum2 += i;
-    i++;
-  }
-  output += "Sum = " + sum2;
+// Exercise 14
+console.log(10 + 5);
+console.log(10 - 5);
+console.log(10 * 5);
+console.log(10 / 5);
 
-  // Exercise 8
-  output += "\n\nExercise 8:\n";
-  i = 10;
-  while (i < 5) {
-    output += i;
-  }
-  output += "Loop did not run";
+// Exercise 15
+console.log(10 % 3);
 
-  // 3. For vs While
+// Exercise 16
+let y = 10;
+y += 5;
+y -= 2;
+console.log(y);
 
-  // Exercise 9
-  output += "\n\nExercise 9:\n";
-  for (let i = 1; i <= 5; i++) {
-    output += i + " ";
-  }
+// Exercise 17
+console.log(5 == "5");
+console.log(5 === "5");
 
-  // Exercise 10
-  output += "\n\nExercise 10:\n";
-  i = 1;
-  while (i <= 5) {
-    output += i + " ";
-    i++;
-  }
+// Exercise 18
+console.log(10 > 5);
+console.log(5 < 10);
 
-  // 4. Infinite Loop Understanding (safe version)
+// Exercise 19
+let ageCheck = 20;
+let hasID = true;
+console.log(ageCheck > 18 && hasID);
 
-  // Exercise 11
-  output += "\n\nExercise 11 (limited demo):\n";
-  let count = 0;
-  while (true) {
-    output += "Loop ";
-    count++;
-    if (count === 5) break;
-  }
+// Exercise 20
+console.log(!true);
 
-  // Exercise 12
-  output += "\n\nExercise 12:\n";
-  let x = 1;
-  while (x <= 5) {
-    output += x + " ";
-    x++;
-  }
+// Exercise 21
+let inc = 5;
+inc++;
+console.log(inc);
 
-  // 5. forEach Basic
+// Exercise 22
+let z = 5;
+console.log(z++);
+console.log(z);
+console.log(++z);
 
-  // Exercise 13
-  output += "\n\nExercise 13:\n";
-  let numbers = [1, 2, 3, 4];
-  numbers.forEach(num => output += num + " ");
+// Exercise 23
+let age2 = 18;
+let result = age2 >= 18 ? "Adult" : "Minor";
+console.log(result);
 
-  // Exercise 14
-  output += "\n\nExercise 14:\n";
-  let fruits = ["Apple", "Banana", "Mango"];
-  fruits.forEach(f => output += f + " ");
+// Exercise 24
+console.log(typeof 10);
+console.log(typeof "Hi");
 
-  // 6. forEach with Index
-
-  // Exercise 15
-  output += "\n\nExercise 15:\n";
-  fruits.forEach((f, index) => {
-    output += index + ":" + f + " ";
-  });
-
-  // 7. forEach Processing
-
-  // Exercise 16
-  output += "\n\nExercise 16:\n";
-  numbers.forEach(n => output += (n * n) + " ");
-
-  // Exercise 17
-  output += "\n\nExercise 17:\n";
-  let marks = [20, 40, 60];
-  marks.forEach(m => {
-    output += (m >= 33 ? "Pass " : "Fail ");
-  });
-
-  // 8. Loop Control
-
-  // Exercise 18
-  output += "\n\nExercise 18:\n";
-  for (let i = 1; i <= 10; i++) {
-    if (i === 5) break;
-    output += i + " ";
-  }
-
-  // Exercise 19
-  output += "\n\nExercise 19:\n";
-  for (let i = 1; i <= 10; i++) {
-    if (i % 2 !== 0) continue;
-    output += i + " ";
-  }
-
-  // 9. Combined
-
-  // Exercise 20
-  output += "\n\nExercise 20:\n";
-
-  // for loop
-  for (let i = 1; i <= 5; i++) {
-    output += i + " ";
-  }
-
-  // while loop sum
-  let y = 1, sum3 = 0;
-  while (y <= 5) {
-    sum3 += y;
-    y++;
-  }
-  output += " Sum=" + sum3;
-
-  // forEach
-  numbers.forEach(n => output += " " + n);
-
-  // 10. Challenge
-
-  // Exercise 21
-  output += "\n\nExercise 21:\n";
-  let num = 5;
-  for (let i = 1; i <= 10; i++) {
-    output += num + "x" + i + "=" + (num * i) + " ";
-  }
-
-  // Exercise 22
-  output += "\n\nExercise 22:\n";
-  let countEven = 0;
-  for (let i = 1; i <= 50; i++) {
-    if (i % 2 === 0) countEven++;
-  }
-  output += "Even Count = " + countEven;
-
-  // Exercise 23
-  output += "\n\nExercise 23:\n";
-  let arr = [10, 25, 5, 40];
-  let max = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) max = arr[i];
-  }
-  output += "Largest = " + max;
-
-  document.getElementById("output").textContent = output;
+// Exercise 26 & 27
+function changeText() {
+    document.getElementById("text").innerHTML = "Hello from JavaScript";
 }
