@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Borders, Rounded, and Shadows</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+  <div class="card shadow p-4">
+    <h1 class="text-center text-primary mb-4">Bootstrap Borders, Rounded & Shadows</h1>
+
+    <ol class="list-group list-group-numbered">
+
+      <li class="list-group-item">
+        <strong>Purpose of the <code>border</code> class:</strong><br>
+        The <code>border</code> class adds a border around an element.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Border classes for specific sides:</strong><br>
+        <code>border-top</code>, <code>border-bottom</code>, <code>border-start</code>, <code>border-end</code>
+      </li>
+
+      <li class="list-group-item">
+        <strong>What does <code>border-top</code> do?</strong><br>
+        It adds a border only to the top side of an element.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Use of <code>border-primary</code>:</strong><br>
+        It changes the border color to Bootstrap’s primary color (blue by default).
+      </li>
+
+      <li class="list-group-item">
+        <strong>Difference between <code>border-1</code> and <code>border-5</code>:</strong><br>
+        <code>border-1</code> creates a thin border, while <code>border-5</code> creates a much thicker border.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Purpose of the <code>rounded</code> class:</strong><br>
+        It adds rounded corners to elements.
+      </li>
+
+      <li class="list-group-item">
+        <strong>What does <code>rounded-0</code> mean?</strong><br>
+        It removes all rounded corners, making edges sharp.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Difference between <code>rounded-circle</code> and <code>rounded-pill</code>:</strong><br>
+        <code>rounded-circle</code> makes the element circular.<br>
+        <code>rounded-pill</code> makes the element oval/pill-shaped.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Where is <code>rounded-pill</code> commonly used?</strong><br>
+        It is commonly used in buttons, badges, tags, and capsules.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Purpose of shadow classes:</strong><br>
+        Shadow classes add depth and visual elevation to elements.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Difference between shadow-sm, shadow, and shadow-lg:</strong><br>
+        <code>shadow-sm</code> = Small shadow<br>
+        <code>shadow</code> = Normal shadow<br>
+        <code>shadow-lg</code> = Large shadow
+      </li>
+
+      <li class="list-group-item">
+        <strong>What does <code>shadow-none</code> do?</strong><br>
+        It removes any shadow from an element.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Why are borders, rounded corners, and shadows important in UI design?</strong><br>
+        They improve appearance, highlight sections, and make interfaces modern and user-friendly.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Real-life example:</strong><br>
+        Product cards in shopping websites often use borders and shadows together to separate each item visually.
+      </li>
+
+      <li class="list-group-item">
+        <strong>Difference between normal CSS and Bootstrap utility classes:</strong><br>
+        Normal CSS requires manual coding like <code>border:1px solid black;</code>, while Bootstrap uses ready-made classes like <code>border shadow rounded</code>.
+      </li>
+
+    </ol>
+
+    <!-- Demo Section -->
+    <div class="mt-5">
+      <h4 class="text-success mb-3">Examples:</h4>
+
+      <div class="border border-primary p-3 mb-3">
+        Example of border + border-primary
+      </div>
+
+      <div class="border-top border-5 border-danger p-3 mb-3">
+        Example of border-top with thick red border
+      </div>
+
+      <div class="border rounded p-3 mb-3">
+        Example of rounded corners
+      </div>
+
+      <div class="border rounded-circle p-4 text-center mb-3" style="width:100px; height:100px;">
+        Circle
+      </div>
+
+      <div class="border rounded-pill px-4 py-2 d-inline-block mb-3">
+        Rounded Pill Example
+      </div>
+
+      <div class="shadow-sm p-3 mb-3 bg-white">
+        Small Shadow
+      </div>
+
+      <div class="shadow p-3 mb-3 bg-white">
+        Normal Shadow
+      </div>
+
+      <div class="shadow-lg p-3 mb-3 bg-white">
+        Large Shadow
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
