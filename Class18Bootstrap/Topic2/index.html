@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Margin and Padding Demo</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-4">
+
+<div class="container">
+    <h1 class="text-center text-primary mb-4">Bootstrap Margin and Padding Examples</h1>
+
+    <!-- Margin Example -->
+    <div class="border bg-white m-5 p-3">
+        This box uses <strong>m-5</strong> (margin on all sides).
+    </div>
+
+    <!-- Margin Top -->
+    <div class="border bg-white mt-5 p-3">
+        This box uses <strong>mt-5</strong> (margin-top).
+    </div>
+
+    <!-- Margin Bottom -->
+    <div class="border bg-white mb-2 p-3">
+        This box uses <strong>mb-2</strong> (margin-bottom).
+    </div>
+
+    <!-- Auto Center -->
+    <div class="border bg-white mx-auto p-3 text-center" style="width: 250px;">
+        This box uses <strong>mx-auto</strong> to center horizontally.
+    </div>
+
+    <!-- Margin Start -->
+    <div class="border bg-white ms-5 p-3 mt-3">
+        This box uses <strong>ms-5</strong> (margin-left/start side).
+    </div>
+
+    <!-- Padding X and Y -->
+    <div class="border bg-white px-5 py-5 mt-4">
+        This box uses <strong>px-5</strong> (left-right padding) and 
+        <strong>py-5</strong> (top-bottom padding).
+    </div>
+
+    <!-- Padding Top and Bottom -->
+    <div class="border bg-white pt-5 pb-5 mt-4">
+        This box uses <strong>pt-5</strong> (padding-top) and 
+        <strong>pb-5</strong> (padding-bottom).
+    </div>
+
+    <!-- Real Life Example -->
+    <div class="card mt-5 shadow p-4">
+        <h4>Login Form Example</h4>
+        <p>
+            In a login page, margin creates space between form sections, 
+            while padding creates inner space inside input boxes and buttons.
+        </p>
+        <button class="btn btn-primary px-4 py-2">Login</button>
+    </div>
+
+    <!-- Explanation Section -->
+    <div class="mt-5 p-4 bg-white border rounded shadow-sm">
+        <h3 class="text-success">Concept Explanation</h3>
+        <p><strong>1. Margin:</strong> Space outside an element.</p>
+        <p><strong>2. Padding:</strong> Space inside an element.</p>
+        <p><strong>3. Difference:</strong> Margin separates elements; padding creates inner spacing.</p>
+        <p><strong>4. Margin Syntax:</strong> <code>m{side}-{size}</code></p>
+        <p><strong>5. Padding Syntax:</strong> <code>p{side}-{size}</code></p>
+        <p><strong>6. px-5 vs py-5:</strong> px = horizontal padding, py = vertical padding.</p>
+        <p><strong>7. Bootstrap Advantage:</strong> Faster, cleaner, reusable classes without writing extra CSS.</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
