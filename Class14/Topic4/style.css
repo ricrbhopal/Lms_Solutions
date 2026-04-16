@@ -1,0 +1,164 @@
+/* 1 Box Shadow */
+.box-shadow-box {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 5px 5px 10px gray;
+    -moz-box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px gray;
+}
+
+/* 2 Border Radius */
+.rounded-btn {
+    padding: 10px 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/* 3 Rotate Transform */
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 20px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* 4 Transition */
+.transition-btn {
+    padding: 10px;
+    background: blue;
+    color: white;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    transition: background 0.5s;
+}
+.transition-btn:hover {
+    background: red;
+}
+
+/* 5 Animation */
+.moving-box {
+    width: 50px;
+    height: 50px;
+    background: green;
+    position: relative;
+    -webkit-animation: moveBox 2s infinite;
+    animation: moveBox 2s infinite;
+}
+
+@-webkit-keyframes moveBox {
+    from { left: 0; }
+    to { left: 200px; }
+}
+@keyframes moveBox {
+    from { left: 0; }
+    to { left: 200px; }
+}
+
+/* 6 Gradient */
+.gradient-box {
+    width: 200px;
+    height: 100px;
+    background: -webkit-linear-gradient(left, red, yellow);
+    background: -moz-linear-gradient(left, red, yellow);
+    background: linear-gradient(to right, red, yellow);
+}
+
+/* 7 Scale */
+.scale-box {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 20px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* 8 Card Shadow Hover */
+.card {
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    -webkit-box-shadow: 2px 2px 5px gray;
+    -moz-box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px gray;
+}
+.card:hover {
+    -webkit-box-shadow: 5px 5px 15px black;
+    box-shadow: 5px 5px 15px black;
+}
+
+/* 9 Flexbox */
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+}
+
+/* 10 User Select */
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 11 Rotating Image */
+.rotate-img {
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 12 TranslateX */
+.move-div {
+    width: 100px;
+    background: pink;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+/* 13 Zoom Hover */
+.zoom-img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* 14 Spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid gray;
+    border-top: 5px solid black;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+/* 15 Rounded Input */
+.rounded-input {
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
