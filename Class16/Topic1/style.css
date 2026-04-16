@@ -1,0 +1,106 @@
+/* Global Variables */
+:root {
+  --main-color: blue;
+  --bg-color: #f4f4f4;
+  --padding-size: 15px;
+  --text-color: black;
+  --navbar-bg: #333;
+  --navbar-text: white;
+  --hover-color: orange;
+  --dark-bg: #111;
+  --dark-text: white;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading */
+h1 {
+  color: var(--main-color);
+  text-align: center;
+}
+
+/* Center Button */
+.center {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Button */
+button {
+  padding: var(--padding-size);
+  background: var(--main-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--hover-color);
+}
+
+/* Card with Local Variable */
+.card {
+  --card-bg: lightyellow;
+  background: var(--card-bg);
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Override Global Variable in Section */
+.section {
+  --text-color: red;
+  color: var(--text-color);
+  padding: 20px;
+}
+
+/* Two Divs with Different Local Variables */
+.box1 {
+  --box-color: lightblue;
+  background: var(--box-color);
+  padding: 20px;
+  margin: 10px;
+}
+
+.box2 {
+  --box-color: lightgreen;
+  background: var(--box-color);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Missing Variable with Fallback */
+.fallback-text {
+  color: var(--missing-color, purple);
+  margin: 20px;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--navbar-bg);
+  padding: 15px;
+}
+
+.navbar a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.navbar a:hover {
+  color: var(--hover-color);
+}
