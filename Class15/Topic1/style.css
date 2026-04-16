@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+div, button, img, p, a {
+    margin: 20px 0;
+}
+
+/* 1 */
+.color-box {
+    width: 150px;
+    height: 100px;
+    background: blue;
+    transition: background-color 1s;
+}
+.color-box:hover {
+    background: red;
+}
+
+/* 2 */
+.width-btn {
+    width: 100px;
+    height: 40px;
+    transition: width 2s;
+}
+.width-btn:hover {
+    width: 200px;
+}
+
+/* 3 */
+.zoom-img {
+    transition: transform 0.5s;
+}
+.zoom-img:hover {
+    transform: scale(1.2);
+}
+
+/* 4 */
+.resize-card {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    transition: width 1s, height 2s;
+}
+.resize-card:hover {
+    width: 200px;
+    height: 150px;
+}
+
+/* 5 */
+.delay-box {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    transition: transform 1s 1s;
+}
+.delay-box:hover {
+    transform: translateX(100px);
+}
+
+/* 6 */
+.opacity-box {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: opacity 1s;
+}
+.opacity-box:hover {
+    opacity: 0.5;
+}
+
+/* 7 */
+.timing {
+    width: 100px;
+    height: 50px;
+    background: gray;
+    margin: 10px;
+    transition: transform 1s;
+}
+.timing:hover {
+    transform: translateX(100px);
+}
+.linear { transition-timing-function: linear; }
+.ease { transition-timing-function: ease; }
+.ease-in { transition-timing-function: ease-in; }
+.ease-out { transition-timing-function: ease-out; }
+.ease-in-out { transition-timing-function: ease-in-out; }
+
+/* 8 */
+.menu-item {
+    color: black;
+    transition: color 0.5s;
+}
+.menu-item:hover {
+    color: red;
+}
+
+/* 9 */
+.shape-box {
+    width: 100px;
+    height: 100px;
+    background: purple;
+    border-radius: 50%;
+    transition: border-radius 1s;
+}
+.shape-box:hover {
+    border-radius: 0;
+}
+
+/* 10 */
+.multi-btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+.multi-btn:hover {
+    background: yellow;
+    color: black;
+    padding: 20px 30px;
+}
+
+/* 11 */
+.multi-size-box {
+    width: 100px;
+    height: 100px;
+    background: teal;
+    transition: width 2s, height 4s;
+}
+.multi-size-box:hover {
+    width: 200px;
+    height: 200px;
+}
+
+/* 12 */
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: black;
+    transition: width 0.5s;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* 13 */
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    transition: transform 1s;
+}
+.rotate-box:hover {
+    transform: rotate(45deg);
+}
+
+/* 14 */
+.lift-card {
+    width: 150px;
+    height: 100px;
+    background: lightcoral;
+    transition: transform 0.5s;
+}
+.lift-card:hover {
+    transform: translateY(-20px);
+}
+
+/* 15 */
+.grow-text {
+    font-size: 20px;
+    transition: font-size 0.5s;
+}
+.grow-text:hover {
+    font-size: 30px;
+}
