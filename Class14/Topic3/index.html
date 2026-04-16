@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Style all <p> inside <div> -->
+    <div class="box">
+        <p>Paragraph 1 inside div</p>
+        <p>Paragraph 2 inside div</p>
+    </div>
+
+    <!-- 2. Direct li children of ul -->
+    <ul class="menu1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <div>
+            <li>Nested Item (not direct child)</li>
+        </div>
+    </ul>
+
+    <!-- 3. Style all headings together -->
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <h3>Small Heading</h3>
+
+    <!-- 4. Navigation menu direct child links -->
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <div>
+            <a href="#">Nested Link</a>
+        </div>
+    </nav>
+
+    <!-- 5. All spans inside container -->
+    <div class="container">
+        <span>Span 1</span>
+        <div>
+            <span>Nested Span</span>
+        </div>
+    </div>
+
+    <!-- 6. Direct child div inside section -->
+    <section class="section-box">
+        <div>Direct Child Div 1</div>
+        <div>Direct Child Div 2</div>
+        <article>
+            <div>Nested Div (not direct)</div>
+        </article>
+    </section>
+
+    <!-- 7. Grouping selector -->
+    <button>Button</button>
+    <a href="#">Link</a>
+    <p>Paragraph</p>
+
+    <!-- 8. Nested paragraphs inside card -->
+    <div class="card">
+        <p>Paragraph inside card</p>
+        <div>
+            <p>Nested paragraph inside card</p>
+        </div>
+    </div>
+
+    <!-- 9. Immediate images inside gallery -->
+    <div class="gallery">
+        <img src="https://via.placeholder.com/100" alt="">
+        <div>
+            <img src="https://via.placeholder.com/100" alt="">
+        </div>
+    </div>
+
+    <!-- 10. Nested list items inside menu -->
+    <ul class="menu2">
+        <li>Main Item
+            <ul>
+                <li>Nested Item</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- 11. Direct child headings -->
+    <div class="heading-box">
+        <h2>Direct Heading</h2>
+        <div>
+            <h2>Nested Heading</h2>
+        </div>
+    </div>
+
+    <!-- 12. Title and subtitle -->
+    <h2 class="title">Title</h2>
+    <h3 class="subtitle">Subtitle</h3>
+
+    <!-- 13. Footer direct child paragraphs -->
+    <footer class="footer">
+        <p>Direct Footer Paragraph</p>
+        <div>
+            <p>Nested Footer Paragraph</p>
+        </div>
+    </footer>
+
+    <!-- 14. All input fields inside form -->
+    <div class="form-container">
+        <input type="text" placeholder="Name">
+        <div>
+            <input type="email" placeholder="Email">
+        </div>
+    </div>
+
+    <!-- 15. Sidebar top-level menu items -->
+    <ul class="sidebar">
+        <li>Dashboard</li>
+        <li>Profile
+            <ul>
+                <li>Settings</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
