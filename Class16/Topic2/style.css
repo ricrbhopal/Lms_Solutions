@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile First */
+body {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+/* Header */
+.header {
+  width: 100vw;
+  height: 10vh;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Box */
+.responsive-box {
+  width: 90%;
+  max-width: 400px;
+  background: coral;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Split Screen */
+.split-screen {
+  display: flex;
+}
+
+.left, .right {
+  width: 50vw;
+  padding: 20px;
+  text-align: center;
+}
+
+.left {
+  background: lightgreen;
+}
+
+.right {
+  background: lightpink;
+}
+
+/* Sidebar Layout */
+.layout {
+  display: flex;
+  margin: 20px 0;
+}
+
+.sidebar {
+  flex: 1;
+  background: #ddd;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 3;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* Responsive Image */
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Flex Wrap */
+.flex-wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.item {
+  flex: 1 1 100px;
+  background: orange;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grid Gallery */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Blog Layout */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.blog-layout article {
+  background: #eee;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .blog-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile Layout Changes */
+@media (max-width: 600px) {
+  .split-screen {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+}
