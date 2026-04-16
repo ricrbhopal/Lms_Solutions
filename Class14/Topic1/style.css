@@ -1,0 +1,90 @@
+/* 1 */
+.hover-btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* 2 */
+.focus-input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* 3 */
+.even-list li:nth-child(even) {
+    background-color: lightgray;
+}
+
+/* 4 */
+.nav-menu li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+/* 5 */
+.border-list li {
+    border-bottom: 1px solid black;
+}
+.border-list li:last-child {
+    border-bottom: none;
+}
+
+/* 6 */
+.special-list li:not(.special):hover {
+    color: blue;
+}
+
+/* 7 */
+button:disabled {
+    background-color: gray;
+    color: white;
+}
+
+/* 8 */
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+table tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+/* 9 */
+.menu-links a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.menu-links a:hover {
+    transform: scale(1.1);
+}
+
+/* 10 */
+.card-container .card:last-child {
+    background-color: yellow;
+}
+
+/* 11 */
+.glow-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px blue;
+}
+
+/* 12 */
+p:not(.exclude) {
+    color: green;
+}
+
+/* 13 */
+.btn-group button:first-child {
+    background-color: orange;
+}
+
+/* 14 */
+input:disabled {
+    opacity: 0.5;
+}
+
+/* 15 */
+.action-btn:not(:disabled):hover {
+    background-color: purple;
+    color: white;
+}
