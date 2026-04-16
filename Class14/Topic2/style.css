@@ -1,0 +1,138 @@
+/* 1. Large first letter like newspaper */
+.newspaper::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+    color: darkred;
+}
+
+/* 2. First line bold and different color */
+.firstline::first-line {
+    font-weight: bold;
+    color: blue;
+}
+
+/* 3. Add "Note:" before warning */
+.warning::before {
+    content: "Note: ";
+    color: red;
+    font-weight: bold;
+}
+
+/* 4. Star icon after heading */
+.star-heading::after {
+    content: " ★";
+    color: gold;
+}
+
+/* 5. Currency symbol before prices */
+.price::before {
+    content: "₹";
+    color: green;
+    font-weight: bold;
+}
+
+/* 6. External link arrow */
+.external-link::after {
+    content: " ↗";
+    color: blue;
+}
+
+/* 7. Quote block quotation marks */
+.quote::before {
+    content: "“";
+    font-size: 30px;
+    color: gray;
+}
+
+.quote::after {
+    content: "”";
+    font-size: 30px;
+    color: gray;
+}
+
+/* 8. Decorative lines before and after section title */
+.section-title::before,
+.section-title::after {
+    content: " —— ";
+    color: gray;
+}
+
+/* 9. Button arrow after text */
+.arrow-button::after {
+    content: " →";
+}
+
+/* 10. Automatic numbering before list items */
+.number-list {
+    list-style: none;
+    counter-reset: item;
+}
+
+.number-list li::before {
+    counter-increment: item;
+    content: counter(item) ". ";
+    font-weight: bold;
+}
+
+/* 11. First letter of blog title differently */
+.blog-title::first-letter {
+    font-size: 50px;
+    color: purple;
+}
+
+/* 12. Decorative underline after card title */
+.card-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: black;
+    margin-top: 5px;
+}
+
+/* 13. Badge label before product name */
+.product-name::before {
+    content: "New ";
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    margin-right: 5px;
+}
+
+/* 14. Checkmark before completed task */
+.completed-task::before {
+    content: "✔ ";
+    color: green;
+}
+
+/* 15. Tooltip arrow effect */
+.tooltip-box {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background: black;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip-box:hover .tooltip-text {
+    visibility: visible;
+}
