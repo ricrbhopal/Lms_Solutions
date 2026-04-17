@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Content */
+.content {
+  height: 2000px;
+  padding: 120px 20px;
+}
+
+/* 2 Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* 11 Banner */
+.top-banner {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  background: orange;
+  text-align: center;
+  padding: 10px;
+}
+
+/* 8 Overlapping header */
+.overlap-header {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+/* 1 Bottom-right button */
+.btn-bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 3 Back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+
+/* 4 Chat icon */
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* 5 Notification */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 10px;
+}
+
+/* 6 Sidebar */
+.fixed-sidebar {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  width: 150px;
+  height: 200px;
+  background: lightblue;
+}
+
+/* 7 FAB */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  background: purple;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* 9 Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* 10 Top-left */
+.top-left-box {
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  background: pink;
+  padding: 10px;
+}
+
+/* 12 Floating menu */
+.floating-menu {
+  position: fixed;
+  top: 300px;
+  right: 20px;
+  background: teal;
+  color: white;
+  padding: 10px;
+}
+
+/* 13 Corners */
+.corner {
+  position: fixed;
+  padding: 8px;
+  background: gray;
+  color: white;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+/* 14 Overlay */
+.overlay-box {
+  position: fixed;
+  top: 400px;
+  left: 50%;
+  background: black;
+  color: white;
+  padding: 20px;
+  z-index: 2000;
+}
+
+/* 15 Always visible */
+.always-visible {
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  background: yellow;
+  padding: 10px;
+}
