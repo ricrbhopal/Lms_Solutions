@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: black;
+  color: white;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  position: sticky;
+  top: 20px;
+  background: lightblue;
+  padding: 10px;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Common box */
+.box {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 20px;
+  min-height: 200px;
+}
+
+/* Sticky common */
+.sticky {
+  position: sticky;
+  top: 0;
+  background: yellow;
+  padding: 10px;
+}
+
+/* Scroll container */
+.scroll-box {
+  height: 200px;
+  overflow: auto;
+}
+
+/* Parent boundary */
+.parent {
+  height: 300px;
+  background: #eee;
+}
+
+.small-box {
+  top: 10px;
+  background: orange;
+}
+
+/* Table */
+.table-container {
+  height: 150px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: black;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  position: sticky;
+  bottom: 0;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+/* Ad banner */
+.ad {
+  position: sticky;
+  top: 10px;
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+/* Spacing */
+.space {
+  top: 20px;
+  background: cyan;
+}
+
+/* Tall container */
+.tall {
+  height: 800px;
+}
+
+/* Overflow fix */
+.overflow-fix {
+  height: 200px;
+  overflow: visible; /* important fix */
+}

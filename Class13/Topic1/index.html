@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Position Examples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1 & 4 Sticky Header/Navbar -->
+<header class="header">Sticky Header / Navbar</header>
+
+<!-- 2 Sidebar -->
+<div class="layout">
+  <aside class="sidebar">Sticky Sidebar</aside>
+
+  <main class="content">
+
+    <!-- 3 Sticky title inside container -->
+    <section class="box scroll-box">
+      <h2 class="sticky">Sticky Section Title</h2>
+      <p>Lots of scrolling content...</p>
+      <p>More content...</p>
+      <p>More content...</p>
+      <p>More content...</p>
+    </section>
+
+    <!-- 5 Sticky stops at parent -->
+    <section class="box parent">
+      <div class="sticky small-box">Stops at Parent End</div>
+    </section>
+
+    <!-- 6 Table sticky header -->
+    <section class="box">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Age</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>A</td><td>20</td></tr>
+            <tr><td>B</td><td>25</td></tr>
+            <tr><td>C</td><td>30</td></tr>
+            <tr><td>D</td><td>35</td></tr>
+            <tr><td>E</td><td>40</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7 Sticky inside scroll container -->
+    <section class="box scroll-box">
+      <div class="sticky">Sticky Inside Scroll</div>
+      <p>Scrolling content...</p>
+      <p>More content...</p>
+      <p>More content...</p>
+    </section>
+
+    <!-- 8 Multiple sticky headings -->
+    <section class="box">
+      <h2 class="sticky">Section 1</h2>
+      <p>Content...</p>
+      <h2 class="sticky">Section 2</h2>
+      <p>Content...</p>
+    </section>
+
+    <!-- 9 Sticky footer -->
+    <section class="box scroll-box">
+      <p>Content...</p>
+      <p>More content...</p>
+      <div class="footer">Sticky Footer</div>
+    </section>
+
+    <!-- 10 Sticky ad -->
+    <section class="box">
+      <div class="ad">Ad Banner</div>
+      <p>Long content...</p>
+      <p>More content...</p>
+    </section>
+
+    <!-- 11 Sticky with spacing -->
+    <section class="box">
+      <div class="sticky space">Sticky with Top 20px</div>
+      <p>Content...</p>
+    </section>
+
+    <!-- 12 Only one sticky -->
+    <section class="box">
+      <div>Normal</div>
+      <div class="sticky">Only This is Sticky</div>
+      <div>Normal</div>
+    </section>
+
+    <!-- 13 Tall container -->
+    <section class="box tall">
+      <div class="sticky">Sticky in Tall Container</div>
+    </section>
+
+    <!-- 14 Overflow issue -->
+    <section class="box overflow-fix">
+      <div class="sticky">Overflow Fixed Sticky</div>
+    </section>
+
+    <!-- 15 Sticky within section -->
+    <section class="box scroll-box">
+      <h2 class="sticky">Sticky Inside Section Only</h2>
+      <p>Content...</p>
+      <p>More content...</p>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
