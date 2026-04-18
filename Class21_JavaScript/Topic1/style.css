@@ -1,18 +1,28 @@
 body {
-    font-family: Arial;
-    padding: 20px;
+  font-family: Arial;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #333;
 }
 
 button {
-    margin: 5px;
-    padding: 8px 12px;
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-#box,
-#myDiv,
-#nameBox {
-    border: 1px solid black;
-    padding: 10px;
-    margin-top: 10px;
-    min-height: 40px;
+button:hover {
+  background: darkblue;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
 }
