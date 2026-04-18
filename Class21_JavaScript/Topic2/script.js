@@ -1,99 +1,65 @@
-// 1
-let num1 = 45;
-console.log(num1);
+// 1. Store name, age, student status
+let name = "Raj";
+let age = 23;
+let isStudent = true;
 
-// 2
-let name1 = "Rahul";
+console.log(name, age, isStudent);
 
-// 3
-let isTrue = true;
-
-// 4
-let decimalNum = 98.75;
-// 5
-let isFalse = false;
-
-// 6
-let language = "JavaScript";
-
-// 7
-let year = 2026;
-
-// 8
-let emptyValue = null;
-
-// 9
-let noValue;
-
-// 10
-let company = "OpenAI";
-
-// 11
-let age = 20;
-
-// 12
-const rollNumber = 101;
-// 13
-var schoolName = "ABC School";
-
-// 14
-let amount = 500;
-amount = 700;
-
-// 15
-let isLoggedIn = true;
-
-// 16
-let studentName = "Raj Gupta";
-
-// 17
-let totalMarks = 450;
-
-// 18
-let isPresent = true;
-
-// 19
-let price = 199.99;
-
-// 20
+// 2. var, let, const
+var city = "Delhi";
 let country = "India";
+const pi = 3.14;
 
-// 21
+console.log(city, country, pi);
+
+// 3. Declaration + initialization
+let score;
+score = 95;
+console.log(score);
+
+// 4. Different data types
+let num = 100;
+let text = "Hello";
+let bool = false;
+
+console.log(num, text, bool);
+
+// 5. undefined and null
+let a;
+let b = null;
+
+console.log(a, b);
+
+// 6. typeof check
+console.log(typeof num);   // number
+console.log(typeof text);  // string
+console.log(typeof bool);  // boolean
+console.log(typeof a);     // undefined
+console.log(typeof b);     // object (JS quirk)
+
+// 7. Multiple variables display
+let x = 10, y = 20, z = 30;
+console.log(x, y, z);
+
+// 8. Simple calculation
+let sum = x + y;
+console.log("Sum:", sum);
+
+// 9. Object for student
 let student = {
-    name: "Raj",
-    age: 20
+  name: "Raj",
+  age: 23
 };
+console.log(student);
 
-// 22
-let value = 100;
-console.log(typeof value);
+// 10. Dynamic typing
+let value = 10;
+console.log(typeof value); // number
 
-// 23
-let numberValue = 50;
-numberValue = "50";
+value = "Now I am a string";
+console.log(typeof value); // string
 
-// 24
-let exampleUndefined;
-
-// 25
-let exampleNull = null;
-let exampleUndefined2;
-console.log(exampleNull);       
-console.log(exampleUndefined2);
-
-// 26
-let myNumber = 10;
-let myString = "Hello";
-let myBoolean = false;
-
-// 27
-let favoriteSubject = "Mathematics";
-
-// 28
-let mobileNumber = "9876543210";
-
-// 29
-let isHoliday = false;
-
-// 30
-let cityName = "Mumbai";
+// 11. const behavior
+const fixed = 50;
+// fixed = 100; ❌ ERROR (uncomment to see)
+console.log(fixed);
