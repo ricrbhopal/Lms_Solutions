@@ -1,153 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Display Utilities Examples</title>
-
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<style>
-.box {
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
-  margin: 5px;
-  text-align: center;
-  line-height: 100px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Display Utilities Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="p-4">
+<body>
 
-<div class="container">
-
-<h2 class="mb-4">Bootstrap Display Utilities Examples</h2>
+<h1>Display Utilities Examples</h1>
 
 <!-- 1. Hide div using d-none -->
-<h4>1. Hidden Div using d-none</h4>
-<div class="d-none bg-danger text-white p-3">This div is hidden</div>
+<h2>1. Hide div</h2>
+<div class="box d-none">This is hidden</div>
 
-<!-- 2. Hide middle box -->
-<h4 class="mt-4">2. Three Boxes - Middle Hidden</h4>
-<div class="d-flex">
-  <div class="box bg-primary text-white">Box 1</div>
-  <div class="box bg-secondary text-white d-none">Box 2</div>
-  <div class="box bg-success text-white">Box 3</div>
-</div>
+<!-- 2. Three boxes, middle hidden -->
+<h2>2. Three boxes (middle hidden)</h2>
+<div class="box">Box 1</div>
+<div class="box d-none">Box 2</div>
+<div class="box">Box 3</div>
 
-<!-- 3. d-none removes from layout -->
-<h4 class="mt-4">3. d-none Removes Element Completely</h4>
-<p>Hidden element does not take space:</p>
-<div class="d-flex">
-  <div class="box bg-info">A</div>
-  <div class="box bg-warning d-none">B</div>
-  <div class="box bg-info">C</div>
-</div>
+<!-- 3. Span to block -->
+<h2>3. Span to block</h2>
+<span class="d-block box">Span converted to block</span>
 
-<!-- 4. Span into block -->
-<h4 class="mt-4">4. Span as Block</h4>
-<span class="d-block bg-light border p-2">This span is block</span>
+<!-- 4. Two spans separate lines -->
+<h2>4. Two spans on separate lines</h2>
+<span class="d-block">Span 1</span>
+<span class="d-block">Span 2</span>
 
-<!-- 5. Two spans separate lines -->
-<h4 class="mt-4">5. Two Spans Separate Lines</h4>
-<span class="d-block bg-light border p-2">Span One</span>
-<span class="d-block bg-light border p-2">Span Two</span>
+<!-- 5. Div inline -->
+<h2>5. Div behaving inline</h2>
+<div class="box d-inline">Inline Div 1</div>
+<div class="box d-inline">Inline Div 2</div>
 
-<!-- 6. Div as inline -->
-<h4 class="mt-4">6. Div as Inline</h4>
-<div class="d-inline bg-primary text-white p-2">Inline Div</div>
+<!-- 6. Three divs in one line -->
+<h2>6. Three divs in one line</h2>
+<div class="box d-inline">Div 1</div>
+<div class="box d-inline">Div 2</div>
+<div class="box d-inline">Div 3</div>
 
-<!-- 7. Three divs one line -->
-<h4 class="mt-4">7. Three Inline Divs</h4>
-<div class="d-inline bg-danger text-white p-2">Div 1</div>
-<div class="d-inline bg-success text-white p-2">Div 2</div>
-<div class="d-inline bg-warning text-dark p-2">Div 3</div>
+<!-- 7. Normal div vs inline -->
+<h2>7. Normal vs Inline</h2>
+<div class="box">Normal Div</div>
+<div class="box d-inline">Inline Div</div>
 
-<!-- 8. Normal div vs d-inline -->
-<h4 class="mt-4">8. Normal Div vs Inline Div</h4>
-<div class="bg-secondary text-white p-2">Normal Div</div>
-<div class="d-inline bg-primary text-white p-2">Inline Div</div>
+<!-- 8. Block vs Inline -->
+<h2>8. Block vs Inline Example</h2>
+<div class="box d-block">Block Element</div>
+<div class="box d-inline">Inline Element</div>
 
-<!-- 9. d-block vs d-inline -->
-<h4 class="mt-4">9. Compare d-block and d-inline</h4>
-<div class="d-block bg-info p-2 mb-2">Block Element</div>
-<div class="d-inline bg-warning p-2">Inline Element</div>
+<!-- 9. Buttons inline -->
+<h2>9. Inline Buttons</h2>
+<button class="d-inline">Button 1</button>
+<button class="d-inline">Button 2</button>
 
-<!-- 10. Mixed layout -->
-<h4 class="mt-4">10. Visible + Hidden + Inline</h4>
-<div class="bg-success text-white p-2">First Box Visible</div>
-<div class="d-none bg-danger text-white p-2">Second Hidden</div>
-<div class="d-inline bg-primary text-white p-2">Third Inline</div>
+<!-- 10. Card section -->
+<h2>10. Cards (one hidden)</h2>
+<div class="card">Card 1</div>
+<div class="card d-none">Card 2</div>
+<div class="card">Card 3</div>
 
-<!-- 11. Responsive hide/show -->
-<h4 class="mt-4">11. Responsive Example</h4>
-<div class="d-sm-none d-md-block bg-dark text-white p-3">
-Hidden on small screens, visible on medium+
-</div>
-
-<!-- 12. Full width paragraph -->
-<h4 class="mt-4">12. Full Width Paragraph</h4>
-<p class="d-block bg-light border p-3">This paragraph takes full width.</p>
-
-<!-- 13. Inline buttons -->
-<h4 class="mt-4">13. Inline Buttons</h4>
-<button class="btn btn-primary d-inline">Button 1</button>
-<button class="btn btn-success d-inline">Button 2</button>
-<button class="btn btn-danger d-inline">Button 3</button>
-
-<!-- 14. Remove d-none explanation -->
-<h4 class="mt-4">14. Remove d-none Effect</h4>
-<p>If d-none is removed, hidden element becomes visible again and takes space in layout.</p>
-<div class="bg-warning p-3">Visible because d-none removed</div>
-
-<!-- 15. Hidden card -->
-<h4 class="mt-4">15. Hidden Card</h4>
-<div class="row">
-  <div class="col-md-4">
-    <div class="card p-3">Card 1</div>
-  </div>
-  <div class="col-md-4 d-none">
-    <div class="card p-3">Card 2 Hidden</div>
-  </div>
-  <div class="col-md-4">
-    <div class="card p-3">Card 3</div>
-  </div>
-</div>
-
-<!-- 16. Inline text -->
-<h4 class="mt-4">16. Text on Same Line</h4>
+<!-- 11. Text inline -->
+<h2>11. Text in one line</h2>
 <span class="d-inline">Hello</span>
 <span class="d-inline">World</span>
-<span class="d-inline">Bootstrap</span>
 
-<!-- 17. Navigation inline -->
-<h4 class="mt-4">17. Inline Navigation</h4>
-<a href="#" class="d-inline me-3">Home</a>
-<a href="#" class="d-inline me-3">About</a>
-<a href="#" class="d-inline me-3">Services</a>
-<a href="#" class="d-inline">Contact</a>
+<!-- 12. Navigation -->
+<h2>12. Navigation</h2>
+<nav>
+  <a href="#" class="d-inline">Home</a>
+  <a href="#" class="d-inline">About</a>
+  <a href="#" class="d-inline">Contact</a>
+</nav>
 
-<!-- 18. d-block span behavior -->
-<h4 class="mt-4">18. d-block Changes Span Behavior</h4>
-<span class="d-block bg-light border p-2">Normally inline, now block</span>
+<!-- 13. Span behavior -->
+<h2>13. Span before and after d-block</h2>
+<span>Normal Span</span>
+<span class="d-block">Block Span</span>
 
-<!-- 19. Real-life webpage example -->
-<h4 class="mt-4">19. Real-Life Example (Website Header)</h4>
-<header class="border p-3">
-  <span class="d-inline me-3 fw-bold">LOGO</span>
+<!-- 14. Real-life Example -->
+<h2>14. Real-life Example</h2>
+
+<header class="header">
+  <span class="logo d-inline">MySite</span>
   <nav class="d-inline">
-    <a href="#" class="me-3">Home</a>
-    <a href="#" class="me-3">Products</a>
-    <a href="#" class="me-3">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
   </nav>
-  <button class="btn btn-sm btn-primary d-none d-md-inline float-end">
-    Login
-  </button>
 </header>
 
-</div>
+<section class="content">
+  <div class="card">Visible Card</div>
+  <div class="card d-none">Hidden Card</div>
+  <div class="card d-block">Block Card</div>
+</section>
 
 </body>
 </html>

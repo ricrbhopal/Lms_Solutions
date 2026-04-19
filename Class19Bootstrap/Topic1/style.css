@@ -1,0 +1,56 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+/* Utility Classes */
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+/* Styling */
+.box {
+  background: lightblue;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.card {
+  display: inline-block;
+  width: 120px;
+  height: 80px;
+  background: peachpuff;
+  margin: 5px;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid black;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+.header {
+  background: lightgray;
+  padding: 10px;
+}
+
+.logo {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.content {
+  margin-top: 10px;
+}
