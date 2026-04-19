@@ -1,101 +1,80 @@
-// Exercise 1,2,5
-function runFunction() {
-    console.log("Hello Student");
+// 1. Arithmetic operations
+let a = 10;
+let b = 5;
 
-    // Exercise 3 & 25
-    const div = document.getElementById("container");
-    const btn = document.createElement("button");
-    btn.innerHTML = "New Button";
-    div.append(btn);
-}
+console.log("Addition:", a + b);
+console.log("Subtraction:", a - b);
+console.log("Multiplication:", a * b);
+console.log("Division:", a / b);
 
-// Exercise 6,7
-var a = "Amit";
-let age = 22;
-const city = "Delhi";
-console.log(a, age, city);
+// 2. Modulus
+console.log("Remainder:", a % b);
 
-// Exercise 8
-let x;
-x = 10;
-console.log(x);
+// 3. Exponent
+console.log("Power:", a ** b);
 
-// Exercise 9
-let userName = "Raj";
-let _age = 20;
-// let 123name = "Invalid";
+// 4. += and -=
+let x = 20;
+x += 10; // 30
+console.log("After +=:", x);
 
-// Exercise 10
-let num = 10;
-let str = "Hello";
-let bool = true;
+x -= 5; // 25
+console.log("After -=:", x);
 
-// Exercise 11
-console.log(typeof str);
-
-// Exercise 12
-let u;
-let n = null;
-console.log(u, n);
-
-// Exercise 13
-let data = 10;
-console.log(data);
-data = "Hello";
-console.log(data);
-
-// Exercise 14
-console.log(10 + 5);
-console.log(10 - 5);
-console.log(10 * 5);
-console.log(10 / 5);
-
-// Exercise 15
-console.log(10 % 3);
-
-// Exercise 16
+// 5. *= and /=
 let y = 10;
-y += 5;
-y -= 2;
-console.log(y);
+y *= 2; // 20
+console.log("After *=:", y);
 
-// Exercise 17
-console.log(5 == "5");
-console.log(5 === "5");
+y /= 4; // 5
+console.log("After /=:", y);
 
-// Exercise 18
+// 6. == vs ===
+console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+
+// 7. Comparison operators
 console.log(10 > 5);
-console.log(5 < 10);
+console.log(10 < 5);
+console.log(10 >= 10);
+console.log(10 <= 5);
 
-// Exercise 19
-let ageCheck = 20;
-let hasID = true;
-console.log(ageCheck > 18 && hasID);
+// 8. Logical AND
+let p = true;
+let q = false;
+console.log("AND:", p && q);
 
-// Exercise 20
-console.log(!true);
+// 9. NOT operator
+console.log("NOT:", !p);
 
-// Exercise 21
-let inc = 5;
-inc++;
-console.log(inc);
+// 10. Pre-increment vs Post-increment
+let i = 5;
+console.log("Post:", i++); // 5
+console.log("After Post:", i); // 6
 
-// Exercise 22
-let z = 5;
-console.log(z++);
-console.log(z);
-console.log(++z);
+let j = 5;
+console.log("Pre:", ++j); // 6
 
-// Exercise 23
-let age2 = 18;
-let result = age2 >= 18 ? "Adult" : "Minor";
-console.log(result);
+// 11. Pre-decrement vs Post-decrement
+let m = 5;
+console.log("Post Dec:", m--); // 5
+console.log("After Post Dec:", m); // 4
 
-// Exercise 24
-console.log(typeof 10);
-console.log(typeof "Hi");
+let n = 5;
+console.log("Pre Dec:", --n); // 4
 
-// Exercise 26 & 27
-function changeText() {
-    document.getElementById("text").innerHTML = "Hello from JavaScript";
-}
+// 12. Ternary operator
+let marks = 45;
+let result = (marks >= 40) ? "Pass" : "Fail";
+console.log("Result:", result);
+
+// 13. Multiple conditions
+let attendance = 80;
+console.log("Eligible:", (marks > 80 && attendance > 75));
+
+// 14. typeof
+console.log(typeof 100);        // number
+console.log(typeof "Hello");    // string
+console.log(typeof true);       // boolean
+console.log(typeof undefined);  // undefined
+console.log(typeof null);       // object (JS quirk)
