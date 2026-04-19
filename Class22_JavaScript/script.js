@@ -1,200 +1,156 @@
-function runExercises() {
-  let output = "";
+// 1. FOR LOOP PRACTICE
 
-  // 1. For Loop Practice
+// Exercise 1: 1 to 10
+for (let i = 1; i <= 10; i++) console.log(i);
 
-  // Exercise 1
-  output += "Exercise 1:\n";
-  for (let i = 1; i <= 10; i++) {
-    output += i + " ";
-  }
-
-  // Exercise 2
-  output += "\n\nExercise 2:\n";
-  for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 0) output += i + " ";
-  }
-
-  // Exercise 3
-  output += "\n\nExercise 3:\n";
-  for (let i = 10; i >= 1; i--) {
-    output += i + " ";
-  }
-
-  // Exercise 4
-  output += "\n\nExercise 4:\n";
-  let sum1 = 0;
-  for (let i = 1; i <= 5; i++) {
-    sum1 += i;
-  }
-  output += "Sum = " + sum1;
-
-  // 2. While Loop Practice
-
-  // Exercise 5
-  output += "\n\nExercise 5:\n";
-  let i = 1;
-  while (i <= 5) {
-    output += i + " ";
-    i++;
-  }
-
-  // Exercise 6
-  output += "\n\nExercise 6:\n";
-  i = 5;
-  while (i >= 1) {
-    output += i + " ";
-    i--;
-  }
-
-  // Exercise 7
-  output += "\n\nExercise 7:\n";
-  i = 1;
-  let sum2 = 0;
-  while (i <= 10) {
-    sum2 += i;
-    i++;
-  }
-  output += "Sum = " + sum2;
-
-  // Exercise 8
-  output += "\n\nExercise 8:\n";
-  i = 10;
-  while (i < 5) {
-    output += i;
-  }
-  output += "Loop did not run";
-
-  // 3. For vs While
-
-  // Exercise 9
-  output += "\n\nExercise 9:\n";
-  for (let i = 1; i <= 5; i++) {
-    output += i + " ";
-  }
-
-  // Exercise 10
-  output += "\n\nExercise 10:\n";
-  i = 1;
-  while (i <= 5) {
-    output += i + " ";
-    i++;
-  }
-
-  // 4. Infinite Loop Understanding (safe version)
-
-  // Exercise 11
-  output += "\n\nExercise 11 (limited demo):\n";
-  let count = 0;
-  while (true) {
-    output += "Loop ";
-    count++;
-    if (count === 5) break;
-  }
-
-  // Exercise 12
-  output += "\n\nExercise 12:\n";
-  let x = 1;
-  while (x <= 5) {
-    output += x + " ";
-    x++;
-  }
-
-  // 5. forEach Basic
-
-  // Exercise 13
-  output += "\n\nExercise 13:\n";
-  let numbers = [1, 2, 3, 4];
-  numbers.forEach(num => output += num + " ");
-
-  // Exercise 14
-  output += "\n\nExercise 14:\n";
-  let fruits = ["Apple", "Banana", "Mango"];
-  fruits.forEach(f => output += f + " ");
-
-  // 6. forEach with Index
-
-  // Exercise 15
-  output += "\n\nExercise 15:\n";
-  fruits.forEach((f, index) => {
-    output += index + ":" + f + " ";
-  });
-
-  // 7. forEach Processing
-
-  // Exercise 16
-  output += "\n\nExercise 16:\n";
-  numbers.forEach(n => output += (n * n) + " ");
-
-  // Exercise 17
-  output += "\n\nExercise 17:\n";
-  let marks = [20, 40, 60];
-  marks.forEach(m => {
-    output += (m >= 33 ? "Pass " : "Fail ");
-  });
-
-  // 8. Loop Control
-
-  // Exercise 18
-  output += "\n\nExercise 18:\n";
-  for (let i = 1; i <= 10; i++) {
-    if (i === 5) break;
-    output += i + " ";
-  }
-
-  // Exercise 19
-  output += "\n\nExercise 19:\n";
-  for (let i = 1; i <= 10; i++) {
-    if (i % 2 !== 0) continue;
-    output += i + " ";
-  }
-
-  // 9. Combined
-
-  // Exercise 20
-  output += "\n\nExercise 20:\n";
-
-  // for loop
-  for (let i = 1; i <= 5; i++) {
-    output += i + " ";
-  }
-
-  // while loop sum
-  let y = 1, sum3 = 0;
-  while (y <= 5) {
-    sum3 += y;
-    y++;
-  }
-  output += " Sum=" + sum3;
-
-  // forEach
-  numbers.forEach(n => output += " " + n);
-
-  // 10. Challenge
-
-  // Exercise 21
-  output += "\n\nExercise 21:\n";
-  let num = 5;
-  for (let i = 1; i <= 10; i++) {
-    output += num + "x" + i + "=" + (num * i) + " ";
-  }
-
-  // Exercise 22
-  output += "\n\nExercise 22:\n";
-  let countEven = 0;
-  for (let i = 1; i <= 50; i++) {
-    if (i % 2 === 0) countEven++;
-  }
-  output += "Even Count = " + countEven;
-
-  // Exercise 23
-  output += "\n\nExercise 23:\n";
-  let arr = [10, 25, 5, 40];
-  let max = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) max = arr[i];
-  }
-  output += "Largest = " + max;
-
-  document.getElementById("output").textContent = output;
+// Exercise 2: Even numbers (1–20)
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) console.log(i);
 }
+
+// Exercise 3: Reverse 10 to 1
+for (let i = 10; i >= 1; i--) console.log(i);
+
+// Exercise 4: Sum 1 to 5
+let sum1 = 0;
+for (let i = 1; i <= 5; i++) sum1 += i;
+console.log("Sum 1-5:", sum1);
+
+// 2. WHILE LOOP PRACTICE
+
+// Exercise 5: 1 to 5
+let i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+
+// Exercise 6: Reverse 5 to 1
+let j = 5;
+while (j >= 1) {
+  console.log(j);
+  j--;
+}
+
+// Exercise 7: Sum 1 to 10
+let k = 1,
+  sum2 = 0;
+while (k <= 10) {
+  sum2 += k;
+  k++;
+}
+console.log("Sum 1-10:", sum2);
+
+// Exercise 8: Condition false at start
+let x = 5;
+while (x < 1) {
+  console.log(x); // never runs
+}
+
+// 3. FOR vs WHILE
+
+// Exercise 9: for loop
+for (let a = 1; a <= 5; a++) console.log(a);
+
+// Exercise 10: while loop
+let b = 1;
+while (b <= 5) {
+  console.log(b);
+  b++;
+}
+
+// 4. INFINITE LOOP
+
+// Exercise 11: infinite loop
+// while (true) {
+//   console.log("Running forever");
+// }
+
+// Exercise 12: fixed loop
+let c = 1;
+while (c <= 5) {
+  console.log(c);
+  c++;
+}
+
+// 5. forEach()
+
+// Exercise 13
+let arr1 = [1, 2, 3, 4];
+arr1.forEach((num) => console.log(num));
+
+// Exercise 14
+let fruits = ["Apple", "Banana", "Mango"];
+fruits.forEach((f) => console.log(f));
+
+// 6. forEach with index
+
+// Exercise 15
+arr1.forEach((num, index) => {
+  console.log(index, num);
+});
+
+// 7. forEach Processing
+
+// Exercise 16: square
+arr1.forEach((num) => console.log(num * num));
+
+// Exercise 17: pass/fail
+let marks = [45, 60, 30, 80];
+marks.forEach((m) => {
+  console.log(m >= 40 ? "Pass" : "Fail");
+});
+
+// 8. LOOP CONTROL
+
+// Exercise 18: stop at value
+for (let d = 1; d <= 10; d++) {
+  if (d === 5) break;
+  console.log(d);
+}
+
+// Exercise 19: skip values
+for (let e = 1; e <= 10; e++) {
+  if (e === 5) continue;
+  console.log(e);
+}
+
+// 9. COMBINED
+
+// Exercise 20
+for (let f = 1; f <= 5; f++) console.log(f);
+
+let g = 1,
+  sum3 = 0;
+while (g <= 5) {
+  sum3 += g;
+  g++;
+}
+console.log("Sum:", sum3);
+
+let arr2 = [10, 20, 30];
+arr2.forEach((n) => console.log(n));
+
+// 10. CHALLENGE
+
+// Exercise 21: table
+let num = 5;
+for (let h = 1; h <= 10; h++) {
+  console.log(num + " x " + h + " = " + num * h);
+}
+
+// Exercise 22: count even (1–50)
+let count = 0;
+for (let z = 1; z <= 50; z++) {
+  if (z % 2 === 0) count++;
+}
+console.log("Even count:", count);
+
+// Exercise 23: largest number
+let arr3 = [10, 25, 5, 40, 15];
+let max = arr3[0];
+
+for (let i2 = 1; i2 < arr3.length; i2++) {
+  if (arr3[i2] > max) max = arr3[i2];
+}
+console.log("Largest:", max);
