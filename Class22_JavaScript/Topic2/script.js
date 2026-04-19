@@ -1,127 +1,85 @@
-// 1. Print numbers from 1 to 10
+// 1. Print 1 to 5
 let i = 1;
-while (i <= 10) {
-    console.log(i);
-    i++;
+while (i <= 5) {
+  console.log(i);
+  i++;
 }
 
-// 2. Print numbers from 5 to 15
-i = 5;
-while (i <= 15) {
-    console.log(i);
-    i++;
+// 2. Print 5 to 1
+let a = 5;
+while (a >= 1) {
+  console.log(a);
+  a--;
 }
 
-// 3. Print even numbers from 2 to 20
-i = 2;
-while (i <= 20) {
-    console.log(i);
-    i += 2;
-}
+// 3. Start from 2, add 2 (<11)
+let b = 2;
+while (b < 11) {
+  console.log(b);
+  b += 2;
+} // 2,4,6,8,10
 
-// 4. Print odd numbers from 1 to 15
-i = 1;
-while (i <= 15) {
-    console.log(i);
-    i += 2;
-}
-
-// 5. Reverse from 10 to 1
-i = 10;
-while (i >= 1) {
-    console.log(i);
-    i--;
-}
-
-// 6. Multiples of 5 up to 50
-i = 5;
-while (i <= 50) {
-    console.log(i);
-    i += 5;
-}
-
-// 7. First 10 natural numbers
-i = 1;
-while (i <= 10) {
-    console.log(i);
-    i++;
-}
-
-// 8. Sum from 1 to 10
-i = 1;
-let sum = 0;
-while (i <= 10) {
-    sum += i;
-    i++;
+// 4. Sum from 10 to 5
+let c = 10,
+  sum = 0;
+while (c >= 5) {
+  sum += c;
+  c--;
 }
 console.log(sum);
 
-// 9. Sum of even numbers from 1 to 20
-i = 2;
-let evenSum = 0;
-while (i <= 20) {
-    evenSum += i;
-    i += 2;
-}
-console.log(evenSum);
-
-// 10. Multiplication table of 3
-i = 1;
-while (i <= 10) {
-    console.log("3 x " + i + " = " + (3 * i));
-    i++;
+// 5. Structure (init → condition → work → update)
+let d = 1;
+while (d <= 3) {
+  console.log(d);
+  d++;
 }
 
-// 11. Numbers divisible by 3 between 1 and 30
-i = 1;
-while (i <= 30) {
-    if (i % 3 === 0) {
-        console.log(i);
-    }
-    i++;
-}
+// 6. Trace: d=1→print→2→print→3→print→4 stop
 
-// 12. Repeat Hello JavaScript 5 times
-i = 1;
-while (i <= 5) {
-    console.log("Hello JavaScript");
-    i++;
-}
+// 7. Condition false at start
+let e = 5;
+while (e < 1) {
+  console.log(e);
+  e++;
+} // never runs
 
-// 13. Decrease from 20 to 5
-i = 20;
-while (i >= 5) {
-    console.log(i);
-    i--;
-}
+// 8. No update → infinite loop
+// let f = 1;
+// while (f <= 5) {
+//   console.log(f);
+// } // no f++
 
-// 14. If condition is false at beginning
-// Loop body will not run even once
-i = 10;
-while (i < 5) {
-    console.log(i);
-    i++;
-}
+// 9. Infinite loop example
+// let g = 1;
+// while (g > 0) {
+//   console.log(g);
+//   g++;
+// } // never stops
 
-// 15. Infinite loop example
-// Warning: Runs forever
-/*
+// 10. Condition controls stopping
+let h = 1;
+while (h <= 3) {
+  console.log(h);
+  h++;
+} // stops at 4
+
+// 11. Increment vs Decrement
 let x = 1;
-while (x > 0) {
-    console.log(x);
-}
-*/
+while (x <= 3) {
+  console.log(x);
+  x++;
+} // 1→3
 
-// 16. Why update variable is necessary
-// Without update, loop may never stop
+let y = 3;
+while (y >= 1) {
+  console.log(y);
+  y--;
+} // 3→1
 
-// 17. Why while is called pre-check loop
-// Because condition is checked before executing loop body
-
-// 18. Real-life example
-// ATM machine keeps asking for PIN until correct PIN entered
-let correctPin = false;
-while (!correctPin) {
-    console.log("Enter PIN again");
-    correctPin = true; // Example: correct PIN entered
-}
+// 12. Runs how many times
+let z = 1;
+while (z <= 5) {
+  console.log(z);
+  z++;
+} // runs 5 times
