@@ -1,139 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Headings and Display Typography</title>
+  <meta charset="UTF-8">
+  <title>Bootstrap Typography Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light">
 
-<div class="container py-5">
+<body class="p-4">
 
-    <!-- 1 All Default HTML Headings -->
-    <section class="mb-5">
-        <h2 class="text-primary mb-3">1. Default HTML Headings</h2>
-        <h1>Heading h1</h1>
-        <h2>Heading h2</h2>
-        <h3>Heading h3</h3>
-        <h4>Heading h4</h4>
-        <h5>Heading h5</h5>
-        <h6>Heading h6</h6>
-    </section>
+  <!-- 1. Header with display -->
+  <h1 class="display-1 mb-4">Main Header (Display 1)</h1>
 
-    <!-- 2 Main Title and Subtitle -->
-    <section class="mb-5">
-        <h1>Main Website Title</h1>
-        <h3 class="text-muted">This is the subtitle of the webpage</h3>
-    </section>
+  <!-- 2. Section title + subtitle -->
+  <h2>Section Title</h2>
+  <h4 class="text-muted mb-4">Subtitle</h4>
 
-    <!-- 3 Display-1 Hero Heading -->
-    <section class="mb-5 text-center bg-white p-4 shadow rounded">
-        <h1 class="display-1 text-primary">Hero Heading</h1>
-    </section>
+  <!-- 3. Only h1 but different display sizes -->
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+  <h1 class="display-5">Display 5</h1>
+  <h1 class="display-6 mb-4">Display 6</h1>
 
-    <!-- 4 All Display Heading Classes -->
-    <section class="mb-5">
-        <h2 class="text-success mb-3">Display Heading Classes</h2>
-        <h1 class="display-1">Display 1</h1>
-        <h1 class="display-2">Display 2</h1>
-        <h1 class="display-3">Display 3</h1>
-        <h1 class="display-4">Display 4</h1>
-        <h1 class="display-5">Display 5</h1>
-        <h1 class="display-6">Display 6</h1>
-    </section>
+  <!-- 4. Compare -->
+  <h1>Normal H1</h1>
+  <h1 class="display-3 mb-4">Styled H1 (Display)</h1>
 
-    <!-- 5 Normal h1 vs Display-1 -->
-    <section class="mb-5">
-        <h2 class="text-danger mb-3">Normal h1 vs Display-1</h2>
-        <h1>Normal h1 Heading</h1>
-        <h1 class="display-1">Display-1 Heading</h1>
-    </section>
+  <!-- 5. Hero section -->
+  <div class="bg-light p-5 mb-4 text-center">
+    <h1 class="display-2">Hero Heading</h1>
+    <p>Short description for hero section.</p>
+  </div>
 
-    <!-- 6 h2 with display-3 -->
-    <section class="mb-5">
-        <h2 class="display-3 text-info">Styled h2 with display-3</h2>
-    </section>
+  <!-- 6. Blog header -->
+  <div class="mb-4">
+    <h1>Blog Title</h1>
+    <h3 class="text-muted">Blog Subtitle</h3>
+    <p>This is a blog content paragraph.</p>
+  </div>
 
-    <!-- 7 Blog Page Title -->
-    <section class="mb-5">
-        <article>
-            <h1>My Blog Title</h1>
-            <h3 class="text-muted">Latest News and Articles</h3>
-        </article>
-    </section>
+  <!-- 7. Card -->
+  <div class="card p-3 mb-4">
+    <h5>Card Title</h5>
+    <p>Card description content.</p>
+  </div>
 
-    <!-- 8 Hero Banner -->
-    <section class="mb-5 bg-primary text-white text-center p-5 rounded">
-        <h1 class="display-2">Welcome to Our Website</h1>
-        <p class="lead">Your success starts here</p>
-    </section>
+  <!-- 8. Hierarchy -->
+  <h1>Main Title</h1>
+  <h2>Section Title</h2>
+  <h3 class="mb-4">Subsection Title</h3>
 
-    <!-- 9 One Heading from Each Level -->
-    <section class="mb-5">
-        <h1>Section h1</h1>
-        <h2>Section h2</h2>
-        <h3>Section h3</h3>
-        <h4>Section h4</h4>
-        <h5>Section h5</h5>
-        <h6>Section h6</h6>
-    </section>
+  <!-- 9. Columns comparison -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+    </div>
+    <div class="col-md-6">
+      <h1 class="display-4">Display 4</h1>
+      <h1 class="display-5">Display 5</h1>
+      <h1 class="display-6">Display 6</h1>
+    </div>
+  </div>
 
-    <!-- 10 Card Title -->
-    <section class="mb-5">
-        <div class="card shadow">
-            <div class="card-body">
-                <h4 class="card-title text-primary">Card Title Example</h4>
-                <p class="card-text">This is a Bootstrap card with typography styling.</p>
-            </div>
-        </div>
-    </section>
+  <!-- 10. Decreasing display sizes -->
+  <h1 class="display-1">Large</h1>
+  <h1 class="display-2">Medium Large</h1>
+  <h1 class="display-3">Medium</h1>
+  <h1 class="display-4">Small Medium</h1>
+  <h1 class="display-5">Small</h1>
+  <h1 class="display-6 mb-4">Very Small</h1>
 
-    <!-- 11 Landing Page Banner -->
-    <section class="mb-5 bg-dark text-white text-center p-5 rounded">
-        <h1 class="display-1">Launch Your Dream Project</h1>
-        <p class="lead">Build modern websites with Bootstrap</p>
-    </section>
+  <!-- 11. Semantic vs styled -->
+  <h1>Semantic Only</h1>
+  <h1 class="display-2 mb-4">Semantic + Styled</h1>
 
-    <!-- 12 Section Titles with display-4 -->
-    <section class="mb-5">
-        <h1 class="display-4 text-secondary">About Us</h1>
-        <h1 class="display-4 text-secondary">Services</h1>
-        <h1 class="display-4 text-secondary">Contact</h1>
-    </section>
-
-    <!-- 13 Semantic + Display Utilities -->
-    <section class="mb-5">
-        <header>
-            <h1 class="display-3">Website Header</h1>
-        </header>
-        <main>
-            <h2>Main Content Section</h2>
-            <h3>Subsection Heading</h3>
-        </main>
-    </section>
-
-    <!-- 14 Dashboard Title -->
-    <section class="mb-5">
-        <h1 class="display-5 text-success">Dashboard Overview</h1>
-    </section>
-
-    <!-- 15 Real-Life Example -->
-    <section class="mb-5 bg-white shadow rounded p-4">
-        <h1 class="display-4 text-primary">Online Store Homepage</h1>
-        <h3 class="text-muted">Best Deals Available Today</h3>
-        <p>
-            Bootstrap typography improves readability by creating clear heading hierarchy,
-            better spacing, and visually attractive content.
-        </p>
-    </section>
-
-</div>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 12. Landing section -->
+  <div class="bg-dark text-white p-5 text-center">
+    <h1 class="display-3">Landing Heading</h1>
+    <h4>Subheading Text</h4>
+    <p>Some description content for landing section.</p>
+  </div>
 
 </body>
 </html>
