@@ -2,123 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Bootstrap Color & Background</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap Color Utilities</title>
 
-  <!-- Bootstrap CSS CDN -->
+  <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light">
 
-<div class="container mt-5">
-  <div class="card shadow p-4">
-    <h1 class="text-center text-primary mb-4">Bootstrap Color Utilities</h1>
+<body class="p-4">
 
-    <ol class="list-group list-group-numbered">
+  <h2 class="mb-4">Bootstrap Color & Background Practice</h2>
 
-      <li class="list-group-item">
-        <strong>What are Bootstrap color utilities?</strong><br>
-        Bootstrap color utilities are predefined classes used to quickly apply text and background colors to HTML elements.
-      </li>
+  <!-- 1 -->
+  <p class="text-primary">This is primary text</p>
 
-      <li class="list-group-item">
-        <strong>Purpose of text color utility classes:</strong><br>
-        They are used to change the color of text easily without writing custom CSS.
-      </li>
+  <!-- 2 -->
+  <p class="text-success">Success text</p>
+  <p class="text-danger">Danger text</p>
+  <p class="text-warning">Warning text</p>
 
-      <li class="list-group-item">
-        <strong>Purpose of background color utility classes:</strong><br>
-        They are used to set background colors for elements quickly.
-      </li>
+  <!-- 3 -->
+  <div class="bg-primary text-white p-3 mb-2">Primary Background</div>
 
-      <li class="list-group-item">
-        <strong>Syntax for text color utility classes:</strong><br>
-        <code>text-{color}</code><br>
-        Example: <code>text-danger</code>
-      </li>
+  <!-- 4 -->
+  <div class="bg-success text-white p-3 mb-2">Success Background</div>
+  <div class="bg-danger text-white p-3 mb-2">Danger Background</div>
+  <div class="bg-info text-dark p-3 mb-3">Info Background</div>
 
-      <li class="list-group-item">
-        <strong>Syntax for background color utility classes:</strong><br>
-        <code>bg-{color}</code><br>
-        Example: <code>bg-success</code>
-      </li>
-
-      <li class="list-group-item">
-        <strong>Five common Bootstrap text color classes:</strong><br>
-        <code>text-primary</code>,
-        <code>text-success</code>,
-        <code>text-danger</code>,
-        <code>text-warning</code>,
-        <code>text-info</code>
-      </li>
-
-      <li class="list-group-item">
-        <strong>Five common Bootstrap background color classes:</strong><br>
-        <code>bg-primary</code>,
-        <code>bg-secondary</code>,
-        <code>bg-success</code>,
-        <code>bg-danger</code>,
-        <code>bg-warning</code>
-      </li>
-
-      <li class="list-group-item">
-        <strong>Why use light text on dark backgrounds?</strong><br>
-        Light text improves readability and contrast on dark backgrounds.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Use of text-white and text-dark classes:</strong><br>
-        <code>text-white</code> makes text white, and <code>text-dark</code> makes text dark for better visibility.
-      </li>
-
-      <li class="list-group-item">
-        <strong>What does bg-opacity-* do?</strong><br>
-        It controls the transparency level of background colors.
-        Example: <code>bg-opacity-50</code>
-      </li>
-
-      <li class="list-group-item">
-        <strong>Purpose of bg-gradient class:</strong><br>
-        It adds a gradient effect to the background color.
-      </li>
-
-      <li class="list-group-item">
-        <strong>How Bootstrap color utilities save time:</strong><br>
-        They eliminate the need to write custom CSS for colors repeatedly.
-      </li>
-
-      <li class="list-group-item">
-        <strong>What happens if colors are chosen incorrectly?</strong><br>
-        Poor color choices reduce readability and make the design unattractive.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Real-life example:</strong><br>
-        In an e-commerce website, product sale labels can use <code>bg-danger text-white</code> to highlight discounts.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Difference between normal CSS and Bootstrap color classes:</strong><br>
-        Normal CSS requires manual color coding like <code>color:red;</code>, while Bootstrap uses ready-made classes like <code>text-danger</code>.
-      </li>
-
-    </ol>
-
-    <!-- Demo Section -->
-    <div class="mt-4">
-      <h4 class="mb-3">Examples:</h4>
-      <p class="text-primary">This is primary text.</p>
-      <p class="text-danger">This is danger text.</p>
-      <div class="bg-success text-white p-3 mb-2">Success background</div>
-      <div class="bg-dark text-white p-3 mb-2">Dark background with white text</div>
-      <div class="bg-warning text-dark p-3">Warning background with dark text</div>
-    </div>
-
+  <!-- 5 -->
+  <div class="bg-dark text-white p-3 mb-3">
+    Dark background with readable text
   </div>
-</div>
 
-<!-- Bootstrap JS CDN -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 6 -->
+  <p class="text-dark bg-light p-2">Dark Text</p>
+  <p class="text-white bg-dark p-2 mb-3">White Text</p>
+
+  <!-- 7 -->
+  <div class="bg-primary bg-opacity-50 text-white p-3 mb-3">
+    Background with opacity 50%
+  </div>
+
+  <!-- 8 -->
+  <div class="bg-success bg-gradient text-white p-3 mb-3">
+    Background with gradient
+  </div>
+
+  <!-- 9 -->
+  <div class="mb-3">
+    <div class="bg-primary text-white p-2 mb-1">Box 1</div>
+    <div class="bg-warning text-dark p-2 mb-1">Box 2</div>
+    <div class="bg-info text-dark p-2">Box 3</div>
+  </div>
+
+  <!-- 10 -->
+  <div class="bg-warning text-dark p-3 border">
+    ⚠️ Warning: This is an alert-style box
+  </div>
 
 </body>
 </html>
