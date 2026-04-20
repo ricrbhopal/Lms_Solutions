@@ -2,122 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Text Alignment & Variants</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap Text Alignment and Variants</title>
 
-  <!-- Bootstrap CSS CDN -->
+  <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
 
-<div class="container mt-5">
-  <div class="card shadow p-4">
-    <h1 class="text-center text-primary mb-4">Bootstrap Text Alignment & Variants</h1>
+<body class="p-4">
 
-    <ol class="list-group list-group-numbered">
+  <h2 class="mb-4">Text Alignment & Variants Practice</h2>
 
-      <li class="list-group-item">
-        <strong>What is text alignment in Bootstrap?</strong><br>
-        Text alignment in Bootstrap means positioning text to the left, center, or right using utility classes.
-      </li>
+  <!-- 1 -->
+  <p class="text-start">Left aligned text</p>
+  <p class="text-center">Center aligned text</p>
+  <p class="text-end mb-4">Right aligned text</p>
 
-      <li class="list-group-item">
-        <strong>What are text variants in Bootstrap?</strong><br>
-        Text variants are utility classes used to control text alignment, transformation, wrapping, and styling.
-      </li>
+  <!-- 2 -->
+  <h3 class="text-start">Left Heading</h3>
+  <h3 class="text-center">Center Heading</h3>
+  <h3 class="text-end mb-4">Right Heading</h3>
 
-      <li class="list-group-item">
-        <strong>Purpose of <code>text-start</code>:</strong><br>
-        Aligns text to the left side (default start position).
-      </li>
+  <!-- 3 -->
+  <p class="text-center mb-4">This paragraph is centered</p>
 
-      <li class="list-group-item">
-        <strong>Purpose of <code>text-center</code>:</strong><br>
-        Aligns text in the center.
-      </li>
+  <!-- 4 -->
+  <div class="box text-end mb-4">Right aligned inside box</div>
 
-      <li class="list-group-item">
-        <strong>Purpose of <code>text-end</code>:</strong><br>
-        Aligns text to the right side.
-      </li>
+  <!-- 5 -->
+  <p class="text-uppercase">this text is uppercase</p>
 
-      <li class="list-group-item">
-        <strong>Difference between text-start, text-center, and text-end:</strong><br>
-        <code>text-start</code> = Left align<br>
-        <code>text-center</code> = Center align<br>
-        <code>text-end</code> = Right align
-      </li>
+  <!-- 6 -->
+  <p class="text-lowercase">THIS TEXT IS LOWERCASE</p>
 
-      <li class="list-group-item">
-        <strong>What does <code>text-uppercase</code> do?</strong><br>
-        Converts all text into uppercase letters.
-      </li>
+  <!-- 7 -->
+  <p class="text-capitalize mb-4">this text is capitalized</p>
 
-      <li class="list-group-item">
-        <strong>What does <code>text-lowercase</code> do?</strong><br>
-        Converts all text into lowercase letters.
-      </li>
+  <!-- 8 -->
+  <p>Normal Text</p>
+  <p class="text-uppercase">Uppercase</p>
+  <p class="text-lowercase mb-4">LOWERCASE</p>
 
-      <li class="list-group-item">
-        <strong>What does <code>text-capitalize</code> do?</strong><br>
-        Capitalizes the first letter of each word.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Difference between text-wrap and text-nowrap:</strong><br>
-        <code>text-wrap</code> allows text to move to the next line.<br>
-        <code>text-nowrap</code> keeps text in a single line.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Why are text alignment utilities useful?</strong><br>
-        They quickly align text without writing extra CSS code.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Why are text transformation classes better than custom CSS?</strong><br>
-        They save time, reduce repeated coding, and make styling consistent.
-      </li>
-
-      <li class="list-group-item">
-        <strong>What happens if text-nowrap is used in a small-width container?</strong><br>
-        Text may overflow outside the container instead of wrapping.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Real-life example of text-center:</strong><br>
-        Website headings, banners, and login page titles are commonly centered.
-      </li>
-
-      <li class="list-group-item">
-        <strong>Difference between normal CSS and Bootstrap text utilities:</strong><br>
-        Normal CSS requires manual coding like <code>text-align:center;</code>, while Bootstrap uses ready-made classes like <code>text-center</code>.
-      </li>
-
-    </ol>
-
-    <!-- Demo Section -->
-    <div class="mt-5">
-      <h4 class="mb-3 text-success">Examples:</h4>
-
-      <p class="text-start border p-2">This text is aligned to the left using text-start.</p>
-      <p class="text-center border p-2">This text is centered using text-center.</p>
-      <p class="text-end border p-2">This text is aligned to the right using text-end.</p>
-
-      <p class="text-uppercase">this text becomes uppercase.</p>
-      <p class="text-lowercase">THIS TEXT BECOMES LOWERCASE.</p>
-      <p class="text-capitalize">this text becomes capitalized.</p>
-
-      <div class="border p-2 w-25 text-nowrap overflow-auto">
-        ThisIsAVeryLongTextWithoutSpacesUsingTextNoWrap
-      </div>
-    </div>
-
+  <!-- 9 -->
+  <div class="box text-nowrap">
+    This is a long text that will not wrap inside this box.
   </div>
-</div>
 
-<!-- Bootstrap JS CDN -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 10 -->
+  <div class="box text-wrap mb-4">
+    This is a long text that will wrap properly inside this box.
+  </div>
+
+  <!-- 11 -->
+  <div class="mb-4">
+    <h3 class="text-center">Centered Heading</h3>
+    <p class="text-start">Left aligned paragraph</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="box custom-align">CSS Right Align</div>
+  <div class="box text-end">Bootstrap Right Align</div>
 
 </body>
 </html>
