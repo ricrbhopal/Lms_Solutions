@@ -2,69 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Viewport Meta Tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Design Practice</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <h1>Responsive Web Design</h1>
-  </header>
+  <!-- 1. Box -->
+  <div class="box">Responsive Box</div>
 
-  <!-- Flexible Box -->
-  <section class="box-section">
-    <div class="responsive-box">Resizable Box</div>
-  </section>
+  <!-- 2. Flexible Container -->
+  <div class="container">
+    <p>Flexible container using % width</p>
+  </div>
 
-  <!-- Two Equal Sections -->
-  <section class="split-screen">
-    <div class="left">Left Section</div>
-    <div class="right">Right Section</div>
-  </section>
+  <!-- 3. Header -->
+  <header class="header">Header (100vw / 10vh)</header>
 
-  <!-- Sidebar Layout -->
-  <section class="layout">
+  <!-- 4. Two Sections -->
+  <div class="split">
+    <div class="half">Left</div>
+    <div class="half">Right</div>
+  </div>
+
+  <!-- 5. Media Query Layout -->
+  <div class="layout">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+  </div>
+
+  <!-- 6. Sidebar + Content -->
+  <div class="flex-layout">
     <aside class="sidebar">Sidebar</aside>
-    <main class="main-content">Main Content Area</main>
-  </section>
+    <main class="main">Main Content</main>
+  </div>
 
-  <!-- Responsive Image -->
-  <section class="image-section">
-    <img src="https://via.placeholder.com/600x300" alt="Sample Image">
-  </section>
+  <!-- 7. Responsive Image -->
+  <img src="https://via.placeholder.com/600" class="responsive-img">
 
-  <!-- Flex Wrap Example -->
-  <section class="flex-wrap-container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-  </section>
+  <!-- 8. Flex Wrap -->
+  <div class="flex-wrap">
+    <div class="box-item">1</div>
+    <div class="box-item">2</div>
+    <div class="box-item">3</div>
+    <div class="box-item">4</div>
+  </div>
 
-  <!-- Grid Gallery -->
-  <section class="grid-gallery">
+  <!-- 9. Grid Gallery -->
+  <div class="grid-gallery">
     <div class="card">Card 1</div>
     <div class="card">Card 2</div>
     <div class="card">Card 3</div>
     <div class="card">Card 4</div>
-  </section>
+  </div>
 
-  <!-- Blog Layout -->
-  <section class="blog-layout">
-    <article>Blog Post 1</article>
-    <article>Blog Post 2</article>
-  </section>
+  <!-- 10. Font Size -->
+  <p class="responsive-text">Responsive Font Size</p>
 
-  <!-- Responsive Navbar -->
+  <!-- 11. Navbar -->
   <nav class="navbar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+    <div>Home</div>
+    <div>About</div>
+    <div>Contact</div>
   </nav>
+
+  <!-- 12. Grid Cards -->
+  <div class="grid-cards">
+    <div class="card">A</div>
+    <div class="card">B</div>
+    <div class="card">C</div>
+  </div>
+
+  <!-- 13. Blog Layout -->
+  <div class="blog">
+    <div class="blog-main">Blog Content</div>
+    <div class="blog-side">Sidebar</div>
+  </div>
+
+  <!-- 14. Mini Project -->
+  <section class="mini">
+    <h2>Mini Project</h2>
+    <img src="https://via.placeholder.com/400" class="responsive-img">
+    <div class="grid-gallery">
+      <div class="card">Item 1</div>
+      <div class="card">Item 2</div>
+    </div>
+  </section>
 
 </body>
 </html>
