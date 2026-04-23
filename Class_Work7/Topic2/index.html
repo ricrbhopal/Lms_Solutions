@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Radio & Checkbox Practice</title>
+</head>
+<body>
+
+  <!-- 1. Single radio button -->
+  <h3>Single Radio Button</h3>
+  <input type="radio"> Male
+
+  <!-- 2. Two radio buttons (no grouping) -->
+  <h3>Two Radio Buttons (No Grouping)</h3>
+  <input type="radio"> Male
+  <input type="radio"> Female
+
+  <!-- 3. Single checkbox -->
+  <h3>Single Checkbox</h3>
+  <input type="checkbox"> Reading
+
+  <!-- 4. Three checkboxes -->
+  <h3>Three Checkboxes</h3>
+  <input type="checkbox"> Reading
+  <input type="checkbox"> Music
+  <input type="checkbox"> Sports
+
+  <!-- 5. Radio buttons with same name (grouped) -->
+  <h3>Gender (Grouped Radio)</h3>
+  <input type="radio" name="gender"> Male
+  <input type="radio" name="gender"> Female
+
+  <!-- 6. Checkboxes for hobbies -->
+  <h3>Hobbies</h3>
+  <input type="checkbox" name="hobbies"> Reading
+  <input type="checkbox" name="hobbies"> Music
+  <input type="checkbox" name="hobbies"> Sports
+
+  <!-- 7. Radio buttons with labels -->
+  <h3>Gender with Labels</h3>
+  <input type="radio" id="male" name="gender2">
+  <label for="male">Male</label>
+
+  <input type="radio" id="female" name="gender2">
+  <label for="female">Female</label>
+
+  <!-- 8. Checkboxes with labels -->
+  <h3>Hobbies with Labels</h3>
+  <input type="checkbox" id="reading">
+  <label for="reading">Reading</label>
+
+  <input type="checkbox" id="music">
+  <label for="music">Music</label>
+
+  <input type="checkbox" id="sports">
+  <label for="sports">Sports</label>
+
+  <!-- 9. Payment Method with default -->
+  <h3>Payment Method</h3>
+  <input type="radio" name="payment" checked> Cash
+  <input type="radio" name="payment"> Card
+  <input type="radio" name="payment"> UPI
+
+  <!-- 10. Skills with default checked -->
+  <h3>Skills</h3>
+  <input type="checkbox" name="skills"> HTML
+  <input type="checkbox" name="skills" checked> CSS
+  <input type="checkbox" name="skills"> JavaScript
+
+  <!-- 11 & 12. Form with grouped radios and checkboxes -->
+  <h3>Form Example</h3>
+  <form>
+    
+    <p><strong>Gender:</strong></p>
+    <input type="radio" id="g1" name="gender3">
+    <label for="g1">Male</label>
+
+    <input type="radio" id="g2" name="gender3">
+    <label for="g2">Female</label>
+
+    <p><strong>Hobbies:</strong></p>
+    <input type="checkbox" id="h1">
+    <label for="h1">Reading</label>
+
+    <input type="checkbox" id="h2">
+    <label for="h2">Music</label>
+
+    <input type="checkbox" id="h3">
+    <label for="h3">Sports</label>
+
+  </form>
+
+</body>
+</html>
