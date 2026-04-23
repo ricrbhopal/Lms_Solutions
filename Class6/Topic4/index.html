@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button & File Upload Practice</title>
+</head>
+<body>
+
+  <!-- 1. Simple button -->
+  <h3>1. Simple Button</h3>
+  <button>Click Me</button>
+
+  <!-- 2. Normal button -->
+  <h3>2. Button with type="button"</h3>
+  <button type="button">Normal Button</button>
+
+  <!-- 3. Form with submit button -->
+  <h3>3. Form with Submit Button</h3>
+  <form>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- 4. Form with reset button -->
+  <h3>4. Form with Reset Button</h3>
+  <form>
+    <input type="text" placeholder="Enter something">
+    <button type="reset">Reset</button>
+  </form>
+
+  <!-- 5. Form with submit and reset buttons -->
+  <h3>5. Submit & Reset Buttons</h3>
+  <form>
+    <input type="text" placeholder="Enter Name"><br><br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <!-- 6. File upload input -->
+  <h3>6. File Upload</h3>
+  <form>
+    <input type="file">
+  </form>
+
+  <!-- 7. File upload with label -->
+  <h3>7. Upload Resume</h3>
+  <form>
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume">
+  </form>
+
+  <!-- 8. Only image files -->
+  <h3>8. Image Upload (.jpg, .png)</h3>
+  <form>
+    <input type="file" accept=".jpg, .png">
+  </form>
+
+  <!-- 9. Multiple file upload -->
+  <h3>9. Multiple File Upload</h3>
+  <form>
+    <input type="file" multiple>
+  </form>
+
+  <!-- 10. Complete form -->
+  <h3>10. Complete Form</h3>
+  <form>
+    <label for="file">Upload File:</label>
+    <input type="file" id="file"><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+</body>
+</html>
