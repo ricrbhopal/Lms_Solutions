@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Exercises</title>
+</head>
+<body>
+
+<h1>📝 HTML Forms Exercises</h1>
+
+<!-- 1. Simple form with Name -->
+<h2>1. Simple form with one text input for Name</h2>
+<form>
+    <input type="text" name="name" placeholder="Enter your name">
+</form>
+
+<!-- 2. Email input with placeholder -->
+<h2>2. Email input field and placeholder text</h2>
+<form>
+    <input type="email" name="email" placeholder="your@email.com">
+</form>
+
+<!-- 3. Password input -->
+<h2>3. Password input field</h2>
+<form>
+    <input type="password" name="password" placeholder="Enter password">
+</form>
+
+<!-- 4. Name & Email with labels -->
+<h2>4. Name and Email inputs (properly connected with labels)</h2>
+<form>
+    <label for="name1">Name:</label>
+    <input type="text" id="name1" name="name">
+    <label for="email1">Email:</label>
+    <input type="email" id="email1" name="email">
+</form>
+
+<!-- 5. Complete form -->
+<h2>5. Name, Email, and Password fields</h2>
+<form>
+    <label for="name2">Name:</label>
+    <input type="text" id="name2" name="name">
+    <label for="email2">Email:</label>
+    <input type="email" id="email2" name="email">
+    <label for="password2">Password:</label>
+    <input type="password" id="password2" name="password">
+</form>
+
+<!-- 6. Username with for/id -->
+<h2>6. Username with correct for and id</h2>
+<form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+</form>
+
+<!-- 7. Input inside label -->
+<h2>7. Input field written inside label tag</h2>
+<form>
+    <label>
+        Username:
+        <input type="text" name="username2">
+    </label>
+</form>
+
+<!-- 8. All placeholders -->
+<h2>8. Placeholder text in all input fields</h2>
+<form>
+    <label for="name3">Name:</label>
+    <input type="text" id="name3" placeholder="John Doe">
+    <label for="email3">Email:</label>
+    <input type="email" id="email3" placeholder="john@example.com">
+    <label for="password3">Password:</label>
+    <input type="password" id="password3" placeholder="••••••••">
+</form>
+
+<!-- 9. Default value -->
+<h2>9. Default value in one input field</h2>
+<form>
+    <label for="name4">Name:</label>
+    <input type="text" id="name4" value="John Doe">
+    <label for="email4">Email:</label>
+    <input type="email" id="email4">
+</form>
+
+<!-- 10. Different input types -->
+<h2>10. Different input types: text, email, number</h2>
+<form>
+    <label for="name5">Name:</label>
+    <input type="text" id="name5">
+    <label for="email5">Email:</label>
+    <input type="email" id="email5">
+    <label for="number">Number:</label>
+    <input type="number" id="number">
+</form>
+
+<!-- 11. Login form -->
+<h2>11. Login form with Email, Password, and Submit</h2>
+<form>
+    <label for="login-email">Email:</label>
+    <input type="email" id="login-email" required>
+    <label for="login-password">Password:</label>
+    <input type="password" id="login-password" required>
+    <button type="submit">Login</button>
+</form>
+
+<!-- 12. Signup form -->
+<h2>12. Signup form with all fields</h2>
+<form>
+    <label for="signup-name">Name:</label>
+    <input type="text" id="signup-name" required>
+    <label for="signup-email">Email:</label>
+    <input type="email" id="signup-email" required>
+    <label for="signup-password">Password:</label>
+    <input type="password" id="signup-password" required>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" required>
+    <button type="submit">Sign Up</button>
+</form>
+
+</body>
+</html>
