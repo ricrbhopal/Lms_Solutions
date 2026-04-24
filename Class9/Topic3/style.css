@@ -1,0 +1,51 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+/* h1 text color */
+h1 {
+    color: darkblue;
+}
+
+/* p color using name */
+p {
+    color: red;
+}
+
+/* div with background + text color */
+.box1 {
+    background-color: yellow;
+    color: black;
+}
+
+/* HEX color */
+.box2 {
+    background-color: #00ffcc;
+    color: black;
+}
+
+/* RGB color */
+.rgb-text {
+    color: rgb(0, 128, 0);
+}
+
+/* Dark background */
+.dark-box {
+    background-color: black;
+    color: white;
+}
+
+/* Padding example */
+.box3 {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+
+/* Contrast example */
+.contrast {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+}
