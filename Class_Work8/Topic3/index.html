@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Tag Practice</title>
+  </head>
+  <body>
+    <!-- 1. Online image -->
+    <h2>Online Image</h2>
+    <img
+      src="https://ricr.in/assets/home/assets/images/banner/home2/22.webp"
+      width="80"
+      alt="Sample online image"
+    />
+
+    <!-- 2. Local image -->
+    <h2>Local Image</h2>
+    <img src="../images/1.webp" alt="Local photo" />
+
+    <!-- 3. Image with alt text -->
+    <h2>Image with Alt Text</h2>
+    <img
+      src="https://via.placeholder.com/150"
+      alt="This is a placeholder image"
+    />
+
+    <!-- 4. Image with width and height -->
+    <h2>Image with Width & Height</h2>
+    <img src="../images/1.webp" alt="Sized image" width="150" height="100" />
+
+    <!-- 5. Image with title (hover text) -->
+    <h2>Image with Title</h2>
+    <img
+      src="../images/1.webp"
+      alt="Hover image"
+      title="This text appears on hover"
+    />
+
+    <!-- 6. Two images (normal + custom size) -->
+    <h2>Two Images</h2>
+    <img src="https://via.placeholder.com/150" alt="Normal image" />
+    <img
+      src="https://via.placeholder.com/150"
+      alt="Custom size image"
+      width="100"
+      height="100"
+    />
+
+    <!-- 7. Incorrect path (alt will show) -->
+    <h2>Incorrect Path Example</h2>
+    <img src="images/wrong.jpg" alt="Image not found - alt text displayed" />
+
+    <!-- 8. Relative path -->
+    <h2>Relative Path Image</h2>
+    <img src="../images/logo-2.png" alt="Logo image" />
+
+    <!-- 9. Absolute path -->
+    <h2>Absolute Path Image</h2>
+    <img src="../images/1.webp" alt="Absolute URL image" />
+
+    <!-- 10. Final combined example -->
+    <h2>Complete Example</h2>
+    <img
+      src="../images/logo-2.png"
+      alt="Complete example image"
+      width="200"
+      height="150"
+      title="Full image example with all attributes"
+    />
+  </body>
+</html>
