@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Relative Path Practice</title>
+  </head>
+  <body>
+    <h1>Relative Path Practice (All in One)</h1>
+
+    <h2>Same Folder Links</h2>
+    <!-- about.html → contact.html -->
+    <a href="contact.html">Go to Contact</a><br />
+
+    <!-- using ./ -->
+    <a href="./contact.html">Go to Contact (using ./)</a><br />
+
+    <h2>From index.html to pages/about.html</h2>
+    <a href="pages/about.html">Go to About</a><br />
+
+    <h2>From pages/about.html (Parent Folder Links)</h2>
+    <!-- these assume file is inside pages/ -->
+    <a href="../index.html">Back to Home (../)</a><br />
+    <a href="../contact.html">Go to Contact (../)</a><br />
+
+    <h2>From blog/posts/article.html (Two Levels Up)</h2>
+    <!-- assume file is inside blog/posts/ -->
+    <a href="../../index.html">Go to Home (../../)</a><br />
+    <a href="../../pages/about.html">Go to About (../../)</a><br />
+    <a href="../../images/logo.png">View Logo (../../)</a><br />
+
+    <h2>From pages/about.html to blog/posts/article.html</h2>
+    <a href="../blog/posts/article.html">Read Article</a><br />
+
+    <h2>All in One Example</h2>
+    <a href="./contact.html">Same Folder (./)</a><br />
+    <a href="../index.html">Parent Folder (../)</a><br />
+    <a href="../../index.html">Two Levels Up (../../)</a><br />
+
+    <p>
+      <b>Note:</b> These links depend on your folder structure. Make sure your
+      project folders match the paths.
+    </p>
+  </body>
+</html>
