@@ -1,0 +1,63 @@
+/* 1. Arial font */
+.arial {
+    font-family: Arial;
+}
+
+/* 2. Font size 20px */
+.font-size {
+    font-size: 20px;
+}
+
+/* 3. Bold text */
+.bold {
+    font-weight: bold;
+}
+
+/* 4. Italic text */
+.italic {
+    font-style: italic;
+}
+
+/* 5. Underline heading */
+.underline {
+    text-decoration: underline;
+}
+
+/* 6. Uppercase text */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* 7. Line height */
+.line-height {
+    line-height: 30px;
+}
+
+/* 8. Letter spacing */
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+/* 9. Styled div */
+.custom-div {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 10. Line-through */
+.line-through {
+    text-decoration: line-through;
+}
+
+/* 11. Font shorthand */
+.shorthand {
+    font: italic bold 20px Arial;
+}
+
+/* 12. Capitalize text */
+.capitalize {
+    font-family: Verdana;
+    font-size: 18px;
+    text-transform: capitalize;
+}
