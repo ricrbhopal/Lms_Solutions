@@ -1,0 +1,100 @@
+/* 1. Heading text-shadow */
+.heading-shadow {
+    text-shadow: 2px 2px 5px gray;
+}
+
+/* 2. Basic box-shadow */
+.box-shadow {
+    box-shadow: 5px 5px 10px 0px gray;
+    padding: 20px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+/* 3. Paragraph text-shadow */
+.text-shadow {
+    text-shadow: 1px 1px 3px black;
+}
+
+/* 4. Styled heading */
+.styled-heading {
+    font-size: 30px;
+    color: blue;
+    text-shadow: 2px 2px 4px gray;
+}
+
+/* 5. Box with width, padding, background */
+.box-style {
+    width: 200px;
+    padding: 20px;
+    background-color: lightgray;
+    box-shadow: 4px 4px 8px gray;
+    margin: 10px 0;
+}
+
+/* 6. Blur value change */
+.blur-box {
+    box-shadow: 5px 5px 20px gray;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* 7. Shadow position change */
+.position-box {
+    box-shadow: -5px -5px 10px gray;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* 8. Different color shadow */
+.color-box {
+    box-shadow: 5px 5px 10px blue;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* 9. Inset shadow */
+.inset-box {
+    box-shadow: inset 5px 5px 10px gray;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* 10. Different directions */
+.left {
+    box-shadow: -5px 0 10px gray;
+    padding: 10px;
+    margin: 5px;
+}
+
+.right {
+    box-shadow: 5px 0 10px gray;
+    padding: 10px;
+    margin: 5px;
+}
+
+.top {
+    box-shadow: 0 -5px 10px gray;
+    padding: 10px;
+    margin: 5px;
+}
+
+.bottom {
+    box-shadow: 0 5px 10px gray;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 11. UI box */
+.ui-box {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px gray;
+    width: 250px;
+    margin-top: 20px;
+}
+
+/* 12. Combine text-shadow + box-shadow */
+.ui-heading {
+    text-shadow: 2px 2px 4px gray;
+}
