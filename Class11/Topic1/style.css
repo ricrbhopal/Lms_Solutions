@@ -1,0 +1,85 @@
+/* Common box style */
+div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* 1. Margin all sides */
+.box1 {
+    margin: 20px;
+}
+
+/* 2. margin-top on second box */
+.box3 {
+    margin-top: 40px;
+}
+
+/* 3. Two values */
+.two-values {
+    margin: 20px 40px;
+    /* top-bottom, left-right */
+}
+
+/* 4. Four values */
+.four-values {
+    margin: 10px 20px 30px 40px;
+    /* top right bottom left */
+}
+
+/* 5. Different sides */
+.different-sides {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+/* 6. Multiple boxes spacing */
+.multi-box {
+    margin: 10px 0;
+}
+
+/* 7. Percentage margin */
+.percentage {
+    margin: 5%;
+}
+
+/* 8. Center using auto */
+.center {
+    width: 200px;
+    margin: 20px auto;
+}
+
+/* 9. Vertical spacing */
+.spacing1 {
+    margin-bottom: 30px;
+}
+
+.spacing2 {
+    margin-top: 30px;
+}
+
+/* 10. Layout spacing */
+.layout1 {
+    margin-bottom: 20px;
+}
+
+.layout2 {
+    margin-top: 20px;
+}
+
+/* 11. Apply margin to paragraph */
+.para {
+    margin: 20px;
+}
+
+/* 12. Apply margin to image */
+.image {
+    margin: 20px;
+}
+
+/* 13. Sections spacing */
+.section {
+    margin: 30px 0;
+    background-color: lightgray;
+}
