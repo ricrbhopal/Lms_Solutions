@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Alerts Practice</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-4">
+
+    <!-- 1. Basic alert (primary) -->
+    <div class="alert alert-primary">
+        This is a primary alert
+    </div>
+
+    <!-- 2. Success alert -->
+    <div class="alert alert-success">
+        This is a success message
+    </div>
+
+    <!-- 3. Warning alert -->
+    <div class="alert alert-warning">
+        This is a warning message
+    </div>
+
+    <!-- 4. Danger alert -->
+    <div class="alert alert-danger">
+        This is an error message
+    </div>
+
+    <!-- 5. Multiple alerts -->
+    <div class="alert alert-primary">Primary</div>
+    <div class="alert alert-success">Success</div>
+    <div class="alert alert-warning">Warning</div>
+    <div class="alert alert-danger">Danger</div>
+
+    <!-- 6. Alert inside container with mt-4 (already applied above) -->
+    <div class="alert alert-info mt-4">
+        Alert with margin top
+    </div>
+
+    <!-- 7 & 8 & 9. Dismissible alert with fade and show -->
+    <div class="alert alert-success alert-dismissible fade show">
+        This is a dismissible alert
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <!-- 10 & 11. Alert with link -->
+    <div class="alert alert-warning">
+        This is an alert with a 
+        <a href="#" class="alert-link">important link</a>
+    </div>
+
+    <!-- 12. Final combined example -->
+    <div class="alert alert-primary">
+        Normal Alert
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show">
+        Dismissible Alert
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <div class="alert alert-success">
+        Alert with 
+        <a href="#" class="alert-link">matching link</a>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS (required for dismiss) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
