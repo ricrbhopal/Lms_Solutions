@@ -1,0 +1,96 @@
+/* 1 & 2. Span as block */
+.block-span {
+    display: block;
+    background-color: lightblue;
+    margin: 5px 0;
+}
+
+/* 3. Div as inline */
+.inline-div {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+/* 4. Inline elements flow like text */
+.inline-text {
+    display: inline;
+    background-color: yellow;
+}
+
+/* 5. Inline width/height (won't fully apply) */
+.inline-size {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+}
+
+/* 6. Inline-block boxes */
+.inline-block {
+    display: inline-block;
+    background-color: pink;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 7. Inline-block with width/height */
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 5px;
+}
+
+/* 8. Side by side layout */
+.layout-box {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: lightcoral;
+    margin: 5px;
+}
+
+/* 9. Spacing using margin/padding */
+.space-box {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightseagreen;
+}
+
+/* 10. Display none */
+.hidden {
+    display: none;
+}
+
+/* 11. Visible boxes */
+.visible-box {
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 12. All types demo */
+.block {
+    display: block;
+    background-color: lightblue;
+    margin: 5px 0;
+}
+
+.inline {
+    display: inline;
+    background-color: yellow;
+}
+
+.inline-block-demo {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: pink;
+}
+
+.none {
+    display: none;
+}
