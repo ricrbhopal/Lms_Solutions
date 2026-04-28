@@ -1,0 +1,108 @@
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* 1 & 2. Basic grid */
+.grid-basic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* 3. Auto rows */
+.grid-rows {
+    display: grid;
+    grid-auto-rows: 100px;
+}
+
+/* 4. Gap */
+.grid-gap {
+    display: grid;
+    gap: 20px;
+}
+
+/* 5. 2 columns */
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* 6. 2 rows */
+.grid-2row {
+    display: grid;
+    grid-template-rows: 100px 100px;
+}
+
+/* 7. 2x2 grid with gap */
+.grid-full {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+}
+
+/* 8. 200px + flexible */
+.grid-fr {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+/* 9. 3 equal columns */
+.grid-repeat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 10. Span columns */
+.grid-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+/* 11. Span rows */
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+/* 12. Layout */
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+.header {
+    grid-column: 1 / -1;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.sidebar {
+    grid-row: span 2;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.content {
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: lightgray;
+    padding: 10px;
+}
