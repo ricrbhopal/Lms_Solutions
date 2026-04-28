@@ -1,0 +1,82 @@
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 1 & 2. Basic flex */
+.flex-container {
+    display: flex;
+}
+
+/* 3. Column direction */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 4. Center horizontally */
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* 5. Move to right */
+.justify-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 6. Space between */
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 7. Space around */
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 8. Align center vertically */
+.align-center {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+/* 9. Start & end alignment */
+.align-start-end {
+    display: flex;
+    height: 100px;
+    align-items: flex-start;
+}
+
+.bottom {
+    align-self: flex-end;
+}
+
+/* 10. Perfect center */
+.center-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #f2f2f2;
+}
+
+/* 11. Navbar layout */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* 12. Gap between items */
+.gap-container {
+    display: flex;
+    gap: 20px;
+}
