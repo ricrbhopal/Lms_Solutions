@@ -3,12 +3,10 @@ let arr1 = [1, 2, 3];
 arr1.push(4);
 console.log("Q1:", arr1);
 
-
 // Q2: Add two elements using push()
 let arr2 = [10, 20];
 arr2.push(30, 40);
 console.log("Q2:", arr2);
-
 
 // Q3: Remove last element using pop()
 let arr3 = [5, 6, 7];
@@ -21,13 +19,10 @@ let removedPop = arr4.pop();
 console.log("Q4 Removed:", removedPop);
 console.log("Q4 Array:", arr4);
 
-
-
 // Q5: Add element at beginning using unshift()
 let arr5 = [2, 3];
 arr5.unshift(1);
 console.log("Q5:", arr5);
-
 
 // Q6: Add two elements at beginning using unshift()
 let arr6 = [30, 40];
@@ -39,7 +34,6 @@ let arr7 = [9, 8, 7];
 arr7.shift();
 console.log("Q7:", arr7);
 
-
 // Q8: Store removed element using shift()
 let arr8 = [50, 60, 70];
 let removedShift = arr8.shift();
@@ -50,7 +44,6 @@ console.log("Q8 Array:", arr8);
 let arr9 = [1, 2, 3, 4, 5];
 arr9.splice(2, 2); // remove 2 elements from index 2
 console.log("Q9:", arr9);
-
 
 // Q10: splice() add elements
 let arr10 = [1, 2, 5];
