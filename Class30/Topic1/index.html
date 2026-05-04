@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practice</title>
+  </head>
+  <body>
+    <!-- Q1: Change h1 text using getElementById -->
+    <h1 id="heading1">Old Heading</h1>
+
+    <!-- Q2: Button changes paragraph text -->
+    <p id="para1">This is paragraph</p>
+    <button onclick="changePara()">Change Paragraph</button>
+
+    <!-- Q3: Update h1 to "Welcome" -->
+    <h1 id="heading2">Click Button</h1>
+    <button onclick="changeHeading()">Update Heading</button>
+
+    <!-- Q4: Read paragraph content -->
+    <p id="para2">Read me</p>
+    <button onclick="readPara()">Read Paragraph</button>
+
+    <!-- Q5: Change content using DOM -->
+    <p id="para3">Original Content</p>
+    <button onclick="updateContent()">Update Content</button>
+
+    <!-- Q6: Hello → Changed -->
+    <p id="para4">Hello</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <!-- Q7: Change both h1 and p -->
+    <h1 id="heading3">Title</h1>
+    <p id="para5">Description</p>
+    <button onclick="changeBoth()">Change Both</button>
+
+    <!-- Q8: DOM structure example -->
+    <div id="domExample">This is a text node</div>
+
+    <!-- Q9: Nested structure -->
+    <div id="parent">
+      <p id="child">Nested Text</p>
+    </div>
+    <button onclick="readNested()">Read Nested</button>
+
+    <!-- Q10: Dynamic content change -->
+    <p id="dynamic">Click button</p>
+    <button onclick="dynamicChange()">Click Me</button>
+
+    <script>
+      // Q1
+      document.getElementById("heading1").innerHTML = "New Heading";
+
+      // Q2
+      function changePara() {
+        document.getElementById("para1").innerHTML = "Paragraph Changed!";
+      }
+
+      // Q3
+      function changeHeading() {
+        document.getElementById("heading2").innerHTML = "Welcome";
+      }
+
+      // Q4
+      function readPara() {
+        let text = document.getElementById("para2").innerHTML;
+        console.log("Q4:", text);
+      }
+
+      // Q5
+      function updateContent() {
+        document.getElementById("para3").innerHTML = "Updated Content";
+      }
+
+      // Q6
+      function changeText() {
+        document.getElementById("para4").innerHTML = "Changed!";
+      }
+
+      // Q7
+      function changeBoth() {
+        document.getElementById("heading3").innerHTML = "New Title";
+        document.getElementById("para5").innerHTML = "New Description";
+      }
+
+      // Q8 (Explanation)
+      console.log(
+        "Q8: document = whole page, element = div, text node = inside text",
+      );
+
+      // Q9
+      function readNested() {
+        let text = document.getElementById("child").innerHTML;
+        console.log("Q9:", text);
+      }
+
+      // Q10
+      function dynamicChange() {
+        document.getElementById("dynamic").innerHTML =
+          "Content Changed Dynamically!";
+      }
+    </script>
+  </body>
+</html>
