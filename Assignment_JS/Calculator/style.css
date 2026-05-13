@@ -1,0 +1,20 @@
+.buttons {
+    grid-template-columns: auto auto auto auto;
+}
+
+.equal {
+    grid-column: span 2;
+    width: 135px !important;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+}
+
+#text {
+    display: block;
+    min-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
