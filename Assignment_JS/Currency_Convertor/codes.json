@@ -1,0 +1,32 @@
+[
+  {
+    "Country": "Afghanistan",
+    "Currency_Code": "afn",
+    "Country_Code": "AF"
+  },
+  {
+    "Country": "Albania",
+    "Currency_Code": "all",
+    "Country_Code": "AL"
+  },
+  {
+    "Country": "Algeria",
+    "Currency_Code": "dzd",
+    "Country_Code": "DZ"
+  },
+  {
+    "Country": "Andorra",
+    "Currency_Code": "eur",
+    "Country_Code": "AD"
+  },
+  {
+    "Country": "Angola",
+    "Currency_Code": "aoa",
+    "Country_Code": "AO"
+  },
+  {
+    "Country": "Argentina",
+    "Currency_Code": "ars",
+    "Country_Code": "AR"
+  }
+]
