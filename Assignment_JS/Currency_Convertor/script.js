@@ -32,9 +32,9 @@ async function loadCountries() {
     country2.appendChild(option2);
   });
 
-  country1.value = "usd,US";
-
-  country2.value = "inr,IN";
+  
+  country1.value = "inr,IN";
+  country2.value = "usd,US";
 
   updateFlag(country1, flag1);
 
